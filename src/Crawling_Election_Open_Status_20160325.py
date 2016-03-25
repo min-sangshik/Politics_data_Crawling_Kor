@@ -30,7 +30,10 @@ cityCode_Arr = ["1100",
                         "3000", "3100", 
                         "4100", "4200", "4300", "4400", "4500", "4600", "4700", "4800", "4900", 
                         "5100"]
-
+items_final_total = []
+items_final_total.append(("O 선거 종류","O 선거 횟수", "O 투표일","O 선거구", "O 전체유권자수","O 투표자 수","O 투표율", "O 정당명", "O 후보자명", "O 득표수"))
+    
+    
 def filesave1(filename, resultdata):
     f = open("../resultdata/"+filename, 'w')
     f.write(resultdata)
@@ -55,7 +58,126 @@ def filesave_csv_1(filename, data):
             for item in data:
                 cp949item = [unicode(i).encode('cp949') for i in item]
                 writer.writerow(cp949item)
-        
+
+
+def exception_check_merged_area(election_date, election_citycode, td_first_data):
+    if ((election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "중구" ) or
+        (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "동구" ) or
+        (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "해운대구" ) or
+        (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "기장군" ) or
+        (election_date == "20120411" and election_citycode=="2700" and  str(td_first_data) == "중구" ) or
+        (election_date == "20120411" and election_citycode=="2700" and  str(td_first_data) == "남구" ) or
+        (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "옹진군" ) or
+        (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "중구" ) or
+        (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "동구" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "양주시" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "동두천시" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "과천시" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "의왕시" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "포천시" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "연천군" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "여주군" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "양평군" ) or
+        (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "가평군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "동해시" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "삼척시" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "속초시" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "고성군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "양양군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "홍천군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "횡성군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "태백시" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "정선군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "영월군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "평창군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "인제군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "화천군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "양구군" ) or
+        (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "철원군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "제천시" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "단양군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "영동군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "보은군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "옥천군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "음성군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "진천군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "괴산군" ) or
+        (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "증평군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "보령시" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "서천군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "서산시" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "태안군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "금산군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "논산시" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "계룡시" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "부여군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "청양군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "홍성군" ) or
+        (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "예산군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "남원시" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "순창군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "김제시" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "완주군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "진안군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "임실군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "무주군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "장수군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "고창군" ) or
+        (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "부안군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "순천시" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "곡성군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "나주시" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "화순군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "광양시" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "구례군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "담양군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "장성군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "영광군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "함평군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "고흥군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "보성군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "장흥군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "강진군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "영암군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "해남군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "완도군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "진도군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "무안군" ) or
+        (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "신안군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "포항시남구" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "울릉군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "문경시" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "예천군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "경산시" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "청도군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "고령군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "성주군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "칠곡군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "군위군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "의성군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "청송군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "영양군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "영덕군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "봉화군" ) or
+        (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "울진군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "통영시" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "고성군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "사천시" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "하동군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "남해군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "밀양시" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "창녕군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "의령군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "함안군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "합천군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "산청군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "함양군" ) or
+        (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "거창군" )
+        ) :
+        return 1
+    else:
+        return 0
+    
 ######################################################
 # 투개표 >> 개표진행상황
 # TEST 
@@ -203,119 +325,7 @@ def cr_election_open_status_parse_writecsv(electionName, cityCode):
                     if count_td == 1: 
                         td_first_data = tddata
                         #Data TR 2 라인을 읽으면 조정해서 배열에 추가하기!!
-                        if ((election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "중구" ) or
-                            (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "동구" ) or
-                            (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "해운대구" ) or
-                            (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "기장군" ) or
-                            (election_date == "20120411" and election_citycode=="2700" and  str(td_first_data) == "중구" ) or
-                            (election_date == "20120411" and election_citycode=="2700" and  str(td_first_data) == "남구" ) or
-                            (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "옹진군" ) or
-                            (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "중구" ) or
-                            (election_date == "20120411" and election_citycode=="2800" and  str(td_first_data) == "동구" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "양주시" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "동두천시" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "과천시" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "의왕시" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "포천시" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "연천군" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "여주군" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "양평군" ) or
-                            (election_date == "20120411" and election_citycode=="4100" and  str(td_first_data) == "가평군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "동해시" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "삼척시" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "속초시" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "고성군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "양양군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "홍천군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "횡성군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "태백시" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "정선군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "영월군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "평창군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "인제군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "화천군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "양구군" ) or
-                            (election_date == "20120411" and election_citycode=="4200" and  str(td_first_data) == "철원군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "제천시" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "단양군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "영동군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "보은군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "옥천군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "음성군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "진천군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "괴산군" ) or
-                            (election_date == "20120411" and election_citycode=="4300" and  str(td_first_data) == "증평군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "보령시" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "서천군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "서산시" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "태안군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "금산군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "논산시" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "계룡시" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "부여군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "청양군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "홍성군" ) or
-                            (election_date == "20120411" and election_citycode=="4400" and  str(td_first_data) == "예산군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "남원시" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "순창군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "김제시" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "완주군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "진안군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "임실군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "무주군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "장수군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "고창군" ) or
-                            (election_date == "20120411" and election_citycode=="4500" and  str(td_first_data) == "부안군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "순천시" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "곡성군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "나주시" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "화순군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "광양시" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "구례군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "담양군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "장성군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "영광군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "함평군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "고흥군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "보성군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "장흥군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "강진군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "영암군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "해남군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "완도군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "진도군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "무안군" ) or
-                            (election_date == "20120411" and election_citycode=="4600" and  str(td_first_data) == "신안군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "포항시남구" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "울릉군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "문경시" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "예천군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "경산시" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "청도군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "고령군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "성주군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "칠곡군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "군위군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "의성군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "청송군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "영양군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "영덕군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "봉화군" ) or
-                            (election_date == "20120411" and election_citycode=="4700" and  str(td_first_data) == "울진군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "통영시" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "고성군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "사천시" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "하동군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "남해군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "밀양시" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "창녕군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "의령군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "함안군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "합천군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "산청군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "함양군" ) or
-                            (election_date == "20120411" and election_citycode=="4800" and  str(td_first_data) == "거창군" )
-                            ) : 
+                        if exception_check_merged_area(election_date, election_citycode, td_first_data) : 
                             print "###except found" + str(td_first_data)
                             td_first_exception_raise = 1       
                             continue 
@@ -381,6 +391,10 @@ def cr_election_open_status_parse_writecsv(electionName, cityCode):
                                                (election_name,election_number,election_date,
                                                 election_area_name, election_area_total_people_count,election_area_votes_people_count,election_area_votes_people_ratio,
                                                 party_name, candidate_name, candidate_votes_count))
+                            #하나의 파일에 모든 정보를 입력!
+                            items_final_total.append((election_name,election_number,election_date,
+                                                election_area_name, election_area_total_people_count,election_area_votes_people_count,election_area_votes_people_ratio,
+                                                party_name, candidate_name, candidate_votes_count))
                        
                     #정리 끝나면 변수리셋
                     items_td_line1 = ["",]
@@ -418,6 +432,8 @@ if __name__ == '__main__':
     for cityCode in cityCode_Arr:
         #print cityCode
         cr_election_open_status_parse_writecsv(electionName, cityCode)
+        
+    filesave_csv_1("Election_Open_Result_20120411_19_TOTAL.csv", items_final_total)
     
 
     
