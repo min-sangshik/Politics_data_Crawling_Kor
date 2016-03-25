@@ -4,4 +4,12 @@
 
 [미래가 밝아질.... 국회의원 분석] - 데이터  
 교과서 국정화 찬성 국회의원
+세월호 관련 - https://t.co/gzWaO6RKZU
 
+[시각화]
+http://visualize.tistory.com/38 - 지도 시각화....
+
+
+[기술]
+url 여러개 구성/엑셀저장 -http://wiki.changwoo.pe.kr/doku.php/project:melonchart
+http://www.crummy.com/software/BeautifulSoup/bs4/doc/
