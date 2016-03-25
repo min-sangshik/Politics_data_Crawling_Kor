@@ -8,6 +8,8 @@ Created on 2016. 3. 24.
 from bs4 import BeautifulSoup
 import urllib
 import csv
+from datetime import datetime, timedelta
+
 
 #electionName = ["20000413", "20000413", "20040415", "20080409","20120411"]  # 이걸 자동화 해야 하는지는 확인해 보아야 함!! (일단 19대 정보 먼저)
 electionName_Arr = ["20120411"]
@@ -100,21 +102,30 @@ def cr_election_open_status_analysis():
             print "[DATA] "+html_data   
             #soup = BeautifulSoup(handle.read(), "html.parser")
             print "Done"
-
-if __name__ == '__main__':
+            
+            
+######################################################
+# 20160325
+# SSMIN
+# 국회의원선거 electionName(년월일), 와 cityCode 넣으면 엑셀로 기본
+# 데이터를 저장하는 함수
+# - 기 저장된 HTML파일에서 데이터 파싱후 CSV로 저장
+######################################################
+def cr_election_open_status_parse_writecsv(electionName, cityCode):
     
-    #[ STEP 1 ]
-    #개표현황(결과자료) 데이터 HTML 파일로 다운로드
-    #cr_election_open_status()
-    
-    #개표현황(결과자료) 데이터 HTML 파일 => 데이터만 추출
-    #cr_election_open_status_analysis()
-    
-    
-    #######
+    #######################################################
     #TEST AREA
-    electionName = "20120411"
-    cityCode = "1100"
+    #######################################################
+    #electionName = "20120411"
+    
+    
+    #######################################################
+    #cityCode LOOP START
+    #######################################################
+    #for cityCode in cityCode_Arr:
+    #   print cityCode
+    
+    #cityCode = "1100"
     
     print "try file open  electionName="+electionName+" cityCode="+cityCode
     
@@ -134,9 +145,10 @@ if __name__ == '__main__':
     soup = BeautifulSoup(html_data, "html.parser")
     divregion_top = soup.find_all("div", "cont_table") #<div class="cont_table">
     
-    items_final = ["",]
+    items_final = []
     items_td_line1 = ["",]
     items_td_line2 = ["",]
+    items_final.append(("O 선거 종류","O 선거 횟수", "O 투표일","O 선거구", "O 전체유권자수","O 투표자 수","O 투표율", "O 정당명", "O 후보자명", "O 득표수"))
     
     ################################
     election_name = "국회의원선거"
@@ -153,9 +165,7 @@ if __name__ == '__main__':
     candidate_name= ""
     candidate_votes_count = "" # 이 정보가 최종으로 예측되어야 함
     ################################
-        
     for trdata in divregion_top:
-        
         trs =  trdata('tr')
         count_tr = 0
         for tr in trs:
@@ -165,9 +175,13 @@ if __name__ == '__main__':
             
             count_td = 0
             if count_tr > 2:
+                td_first_data = ""
+                td_first_exception_raise = 0 # 소계와 같이 하나의 선거구 내부에 추가적인 구가 있는 경우!
+                
                 for td in tds:
                     count_td = count_td+1
                     #print "count _td: " + str(count_td)
+                    
                     tddata =  str(td)
                     tddata=tddata.replace("</br>", "")
                     tddata=tddata.replace(",", "")
@@ -180,29 +194,57 @@ if __name__ == '__main__':
                     tddata=tddata.replace("</td>", "")
                     #print tddata
                     
+                    if count_td == 1: 
+                        td_first_data = tddata
+
+                    #file:///E:/workspace/Politics_Data_Crawling/resultdata/Election_Open_Result_20120411_2600.html 중구 동구
+                    #print str(tddata)
+                
                     if count_tr %2 == 1:
                         #print "firstline"
                         items_td_line1.append(tddata)
                     else:
                         #print "second line"
                         items_td_line2.append(tddata)
-
-                #Data TR 2 라인을 읽으면 조정해서 배열에 추가하기!!
+                #end for td in tds:
+                
+                print "check : "  + str(td_first_data)
+                
+            #Data TR 2 라인을 읽으면 조정해서 배열에 추가하기!!
+#             if ((election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "중구" ) or
+#                (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "동구" ) or
+#                (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "해운대구" ) or
+#                (election_date == "20120411" and election_citycode=="2600" and  str(td_first_data) == "기장군" )) : 
+#                 print "except" + str(td_first_data)
+# 
+#             else:                    
+                
                 if count_tr %2 == 0:
                     print str(items_td_line1[1])
-                    #print str(items_td_line2[2])
+                    print str(items_td_line2[2])
                     
                     election_area_name = str(items_td_line1[1])
                     election_area_total_people_count = str(items_td_line2[2]).split("_")[0]
                     #print "election_area_total_people_count:"+election_area_total_people_count
                     election_area_votes_people_count = str(items_td_line2[3]).split("_")[0]
                     #print "election_area_votes_people_count:"+election_area_votes_people_count
-                    election_area_votes_people_ratio = str(round(float(election_area_votes_people_count)/float(election_area_total_people_count),4))
-                    print "election_area_votes_people_ratio:"+election_area_votes_people_ratio
+                    
+                    try:
+                        election_area_votes_people_ratio = str(round(float(election_area_votes_people_count)/float(election_area_total_people_count),4))
+                    except :
+                        #ValueError: could not convert string to float: 
+                        print election_area_votes_people_count
+                        print election_area_total_people_count
+                        election_area_votes_people_ratio = 0
+                        
+                    #print "election_area_votes_people_ratio:"+election_area_votes_people_ratio
                     ################################
-                    print "len(items_td_line1):"+str(len(items_td_line1))
-                    print "len(items_td_line2):"+str(len(items_td_line2))
+                    #print "len(items_td_line1):"+str(len(items_td_line1))
+                    #print "len(items_td_line2):"+str(len(items_td_line2))
                     column_count = len(items_td_line1)
+                    #엑셀 헤더 정의
+                    
+                    
                     for col_candidate in range(4, len(items_td_line1)-3):
                         
                         if items_td_line1[col_candidate] != "" :
@@ -210,29 +252,49 @@ if __name__ == '__main__':
                             party_name = str(items_td_line1[col_candidate]).split("_")[0]
                             candidate_name= str(items_td_line1[col_candidate]).split("_")[1]
                             candidate_votes_count = str(items_td_line2[col_candidate]).split("_")[0]
-
                             items_final.append(
-                                               (election_name,election_number,election_date,election_date,
+                                               (election_name,election_number,election_date,
                                                 election_area_name, election_area_total_people_count,election_area_votes_people_count,election_area_votes_people_ratio,
                                                 party_name, candidate_name, candidate_votes_count))
-                                                
-                    
+                       
                     #정리 끝나면 변수리셋
                     items_td_line1 = ["",]
                     items_td_line2 = ["",]
-                                            
+                        
+
+                #END IF count_tr %2 == 0:
                 #print "END TR" + str(count_tr) + "\n"
                 
-#                 for items in  items_final:
-#                     for item in items:
-#                         print str(item)
-                        
-                
-
-                
-            #items.append((rank, delta, song, artist, album))
     print "Done"
     #File CSV WRITE TEST
     filesave_csv_1(file_name_excel, items_final)
+    
+    #######################################################
+    #cityCode LOOP END
+    #######################################################
+    
+    
+    
+if __name__ == '__main__':
+    
+    #[ STEP 1 ]
+    #개표현황(결과자료) 데이터 HTML 파일로 다운로드
+    #cr_election_open_status()
+    
+    #개표현황(결과자료) 데이터 HTML 파일 => 저장
+    #cr_election_open_status_analysis()
+    
+    #개표현황(결과자료) 데이터 HTML 파일 파싱 후 CSV 저장
+    
+    electionName = "20120411"
+    #cityCode = "1100"
+    for cityCode in cityCode_Arr:
+        #print cityCode
+        cr_election_open_status_parse_writecsv(electionName, cityCode)
+    
+
+    
+    
+    
     
 

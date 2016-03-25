@@ -13,3 +13,4 @@ http://visualize.tistory.com/38 - 지도 시각화....
 [기술]
 url 여러개 구성/엑셀저장 -http://wiki.changwoo.pe.kr/doku.php/project:melonchart
 http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+요일 http://devyongsik.tistory.com/407
