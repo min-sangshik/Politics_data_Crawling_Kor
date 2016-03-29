@@ -1,0 +1,4248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>중앙선거관리위원회 선거통계시스템</title>
+<script type="text/javascript" src="/common/js/jquery/jquery-1.12.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/common/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/submains.css" />
+<script type="text/javascript" src="/common/js/submains.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/common/css/previous.css" />
+</head>
+<body class="bg">
+<div id="skipNav">
+    <a href="#header">상단 메뉴 바로가기</a>
+    <a href="#container">컨텐츠로 바로가기</a> 
+</div>
+<div id="wrapper"> 
+	<div class="w_inner"> 
+	
+	<div style="display:none;"></div>
+		
+
+
+
+ <div id="header" class="prevH">
+	
+	<div class="top_section">  
+        <h1><a onclick="window.location.href=location.protocol + '//' + location.host;" title="중앙선거관리위원회 선거통계시스템 홈으로 가기"><span>중앙선거관리위원회 선거통계시스템</span></a></h1>
+		
+		<ul class="select_election">
+			<li class="eleft"><a href="/main/showDocument.xhtml?electionId=&topMenuId=BI"><span>최근선거</span></a></li>
+		    <li class="eright"><a href="/main/main_previous_load.xhtml" class="on"><span>역대선거</span></a></li>
+		</ul>
+	</div>
+	
+     
+                
+	<div id="gnb_old">
+		
+		<ul id="presubmu">
+				
+			
+				<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI" class="m_BI ">
+						<span>기본현황</span>
+					</a>
+				</li>
+			
+				<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP" class="m_CP on">
+						<span>후보자</span>
+					</a>
+				</li>
+			
+				<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC" class="m_VC ">
+						<span>투개표</span>
+					</a>
+				</li>
+			
+				<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP" class="m_EP ">
+						<span>당선인</span>
+					</a>
+				</li>
+			
+			
+		</ul>
+		
+	</div>
+	
+		
+	
+	<div id="preallmenu" class="allmenu" style="top:94px;">
+	 	<h3>전체메뉴보기</h3>
+		<div class="a_inner">
+	 		<div class="preallview">
+			 	<ul> 
+	 				
+	 					<li>
+ 							<dl>
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI06">역대선거실시상황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI01">선거구수 및 정수 현황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI042">투표구 현황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIPI06">인구수 변동추이</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIPI01">인구수등 통보상황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIPB06">선거인수 변동추이</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIPB02">선거인명부 확정상황</a></dd>
+									
+								
+							
+							</dl>
+		 				</li>
+		 			
+	 					<li>
+ 							<dl>
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI03">후보자 명부</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI05">사퇴/사망/등록무효</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI06">후보자 각종통계</a></dd>
+									
+								
+							
+							</dl>
+		 				</li>
+		 			
+	 					<li>
+ 							<dl>
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP04">투표율 변동추이</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP01">투표진행상황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP09">개표진행상황</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP04">개표진행(읍면동별)</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP08">개표진행(투표구별)</a></dd>
+									
+								
+							
+							</dl>
+		 				</li>
+		 			
+	 					<li>
+ 							<dl>
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI01">당선인 명부</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI02">무투표 당선인 명부</a></dd>
+									
+								
+	 								
+
+									
+									
+		 								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI03">당선인통계</a></dd>
+									
+								
+							
+							</dl>
+		 				</li>
+		 			
+ 				</ul>
+	     	</div>
+	 	</div>
+	</div>	
+	
+     
+    
+	<div class="selSecondMenu">
+		<ul class="selSubmu">
+			
+				
+			
+				
+					
+						<li><a class="on" href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI03">후보자 명부</a></li>
+					
+						<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI05">사퇴/사망/등록무효</a></li>
+					
+						<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI06">후보자 각종통계</a></li>
+					
+				
+			
+				
+			
+				
+			
+		</ul>
+	</div>
+	
+ </div>
+
+<style type="text/css" media="all" title="default">@import "/common/css/base.css";</style>
+
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery-1.12.1.min.js" ></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery.blockUI.js" ></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery.jsonUtil.js"></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/electioncommon.js"></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/ubiviewer.js"></script>
+<script type="text/javascript">
+//<[CDATA[
+	var DOC = {ROOT : ''};
+	var previousElectionCode = '2';
+	var previousElectionType = '2';
+	var previousCityCode = '1100';
+	var previousSggCityCode = '-1';
+	var previousTownCode = '-1';
+	var previousSggTownCode = '-1';
+	var proportionalRepresentationCode = '-1';
+
+	$(document).ready(function(){
+		
+			$('#spanElectionName').show();
+		
+		
+		settingYN();
+		
+		// 대통령선거
+		
+		
+		$('#electionType').change(changeElectionType);
+		$('#electionName').change(changeElectionName);
+		$('#searchForm').submit(chooseStatementId);
+		$('#electionCode').change(changeElectionCode);
+		$('#cityCode').change(changeCityCode);
+		$('#townCode').change(changeTownCode);
+		$('#sggCityCode').change(changeSggCityCode);
+		$('#sggTownCode').change(changeSggTownCode);
+		$('#proportionalRepresentationCode').change(changeProportionalRepresentationCode);
+
+		setSubTitle();
+	});
+
+	
+	function setSubTitle() {
+		if ($('#electionType').val() > 0) {
+			$('#electionTitle').html(retrieveSelectedName('electionType'));
+		}
+		if ($('#electionName').val() > 0) {
+			$('#electionOrder').html(retrieveSelectedName('electionName'));
+		}
+		if ($('#electionCode').val() > 0) {
+			$('#electionSubject').html(retrieveSelectedName('electionCode'));
+		}
+		if ($('#cityCode').val() > 0) {
+			$('#cityName').html(retrieveSelectedName('cityCode'));
+		}
+		if ($('#townCode').val() > 0) {
+			$('#townSubject').html(retrieveSelectedName('townCode'));
+		}
+		if ($('#sggCityCode').val() > 0) {
+			$('#sggCitySubject').html(retrieveSelectedName('sggCityCode'));
+		}
+		if ($('#sggTownCode').val() > 0) {
+			$('#sggTownSubject').html(retrieveSelectedName('sggTownCode'));
+		}
+	}
+	
+	
+	function changeElectionType(e) {
+		var temp = $("select[name=electionName]");
+		var electionType = $('#electionType').val();
+
+		temp.children().remove();
+		temp.append('<option value="-1">▽ 선 택</option>');
+
+		if(electionType == -1 ){
+			$('#spanElectionName').hide();
+		} else {
+			$('#spanElectionName').show();
+			$('#spanElectionCode').hide();
+		}
+		
+		
+			if(electionType == '1'){
+				
+						temp.append('<option value="20121219">제18대</option>');
+					
+						temp.append('<option value="20071219">제17대</option>');
+					
+						temp.append('<option value="20021219">제16대</option>');
+					
+						temp.append('<option value="19971218">제15대</option>');
+					
+						temp.append('<option value="19921218">제14대</option>');
+					
+						temp.append('<option value="19871216">제13대</option>');
+					
+						temp.append('<option value="19810225">제12대</option>');
+					
+						temp.append('<option value="19800827">제11대</option>');
+					
+						temp.append('<option value="19791206">제10대</option>');
+					
+						temp.append('<option value="19780706">제9대</option>');
+					
+						temp.append('<option value="19721223">제8대</option>');
+					
+						temp.append('<option value="19710427">제7대</option>');
+					
+						temp.append('<option value="19670503">제6대</option>');
+					
+						temp.append('<option value="19631015">제5대</option>');
+					
+						temp.append('<option value="19600315">제4대</option>');
+					
+						temp.append('<option value="19560515">제3대</option>');
+					
+						temp.append('<option value="19520805">제2대</option>');
+					
+						temp.append('<option value="19480720">제1대</option>');
+					
+			}
+		
+			if(electionType == '2'){
+				
+						temp.append('<option value="20120411">제19대</option>');
+					
+						temp.append('<option value="20080409">제18대</option>');
+					
+						temp.append('<option value="20040415">제17대</option>');
+					
+						temp.append('<option value="20000413">제16대</option>');
+					
+						temp.append('<option value="19960411">제15대</option>');
+					
+						temp.append('<option value="19920324">제14대</option>');
+					
+						temp.append('<option value="19880426">제13대</option>');
+					
+						temp.append('<option value="19850212">제12대</option>');
+					
+						temp.append('<option value="19810325">제11대</option>');
+					
+						temp.append('<option value="19781212">제10대</option>');
+					
+						temp.append('<option value="19730227">제9대</option>');
+					
+						temp.append('<option value="19710525">제8대</option>');
+					
+						temp.append('<option value="19670608">제7대</option>');
+					
+						temp.append('<option value="19631126">제6대</option>');
+					
+						temp.append('<option value="19600729">제5대</option>');
+					
+						temp.append('<option value="19580502">제4대</option>');
+					
+						temp.append('<option value="19540520">제3대</option>');
+					
+						temp.append('<option value="19500530">제2대</option>');
+					
+						temp.append('<option value="19480510">제1대</option>');
+					
+			}
+		
+			if(electionType == '4'){
+				
+						temp.append('<option value="20140604">제6회</option>');
+					
+						temp.append('<option value="20100602">제5회</option>');
+					
+						temp.append('<option value="20060531">제4회</option>');
+					
+						temp.append('<option value="20020613">제3회</option>');
+					
+						temp.append('<option value="19980604">제2회</option>');
+					
+						temp.append('<option value="19950627">제1회</option>');
+					
+			}
+		
+			if(electionType == '0'){
+				
+						temp.append('<option value="20151028">2015년 하반기</option>');
+					
+						temp.append('<option value="20150429">2015년 상반기</option>');
+					
+						temp.append('<option value="20141029">2014년 하반기</option>');
+					
+						temp.append('<option value="20140730">2014년 상반기</option>');
+					
+						temp.append('<option value="20131204">2013년</option>');
+					
+						temp.append('<option value="20131030">2013년 하반기</option>');
+					
+						temp.append('<option value="20130626">2013년</option>');
+					
+						temp.append('<option value="20130424">2013년 상반기</option>');
+					
+						temp.append('<option value="20121031">2012년</option>');
+					
+						temp.append('<option value="20121017">2012년</option>');
+					
+						temp.append('<option value="20120627">2012년</option>');
+					
+						temp.append('<option value="20111207">2011년</option>');
+					
+						temp.append('<option value="20111116">2011년</option>');
+					
+						temp.append('<option value="20111026">2011년 하반기</option>');
+					
+						temp.append('<option value="20110824">2011년</option>');
+					
+						temp.append('<option value="20110817">2011년</option>');
+					
+						temp.append('<option value="20110427">2011년 상반기</option>');
+					
+						temp.append('<option value="20101027">2010년 하반기</option>');
+					
+						temp.append('<option value="20100728">2010년 상반기</option>');
+					
+						temp.append('<option value="20091028">2009년 하반기</option>');
+					
+						temp.append('<option value="20090826">2009년</option>');
+					
+						temp.append('<option value="20090429">2009년 상반기</option>');
+					
+						temp.append('<option value="20090408">경기도교육감</option>');
+					
+						temp.append('<option value="20081217">대전교육감</option>');
+					
+						temp.append('<option value="20081029">2008년 하반기</option>');
+					
+						temp.append('<option value="20080730">서울교육감</option>');
+					
+						temp.append('<option value="20080723">전북교육감</option>');
+					
+						temp.append('<option value="20080625">충남교육감</option>');
+					
+						temp.append('<option value="20080604">2008년 상반기</option>');
+					
+						temp.append('<option value="20070425">2007년 상반기</option>');
+					
+						temp.append('<option value="20070214">부산교육감</option>');
+					
+						temp.append('<option value="20061025">2006년 하반기</option>');
+					
+						temp.append('<option value="20060726">2006년 상반기</option>');
+					
+						temp.append('<option value="20051026">2005년 하반기</option>');
+					
+						temp.append('<option value="20050430">2005년 상반기</option>');
+					
+						temp.append('<option value="20041030">2004년 하반기</option>');
+					
+						temp.append('<option value="20040605">2004년 상반기</option>');
+					
+						temp.append('<option value="20031030">2003년 하반기</option>');
+					
+						temp.append('<option value="20030424">2003년 상반기</option>');
+					
+						temp.append('<option value="20020808">2002년 상반기</option>');
+					
+			}
+		
+			if(electionType == '11'){
+				
+						temp.append('<option value="20140604">제6회</option>');
+					
+						temp.append('<option value="20100602">제5회</option>');
+					
+			}
+		
+		
+		$('#spanCityCode').css('display', "none");
+		$('#spanProportionalRepresentationCode').css('display', "none");
+		selectBoxShow("none", "none", "none", "none", "none");
+		
+		if(electionType == 1){ // 대통령선거
+			removeElectionName();
+		}
+	};
+	
+	
+	function changeElectionName(e) {
+		var electionType = $('#electionType').val();
+		$("#electionType").val(electionType);
+		var electionName = $('#electionName').val();
+		var electionType = $('#electionType').val();
+		var oldElectionType = getOldElectionType();
+		$("#oldElectionType").val(oldElectionType);
+
+		previousElectionType = electionType;
+
+		//json_중복처리 : temp.children().remove();, temp.append('<option value="1">대통령선거</option>');
+		if (electionType == 1 ) { //대통령
+			var temp = $("select[name=electionCode]");
+			temp.children().remove();
+			temp.append('<option value="-1">▽ 선 택</option>');
+			temp.append('<option value="1">대통령선거</option>');
+			if(electionName == -1){
+				$('#electionCode').val(-1);
+			}else {
+				$('#electionCode').val(1);
+			}
+		} else {	//비례대표 제외 : 변수추가 (마지막변수에 "Y")
+			checkSubElectionTypeForSgCode_Old($('#electionName').val(), $('#electionType').val()); //선거자료(elect)추출
+			//checkSubElectionTypeForSgCode_Old($('#electionName').val(), $('#electionType').val(),"Y"); //선거자료(elect)추출
+		}
+
+		if(electionName == -1){
+			$('#spanElectionCode').hide();
+			$('#spanSubmit').hide();
+		}else {
+			if (electionType == 2 || electionType == 4){
+				$('#spanElectionCode').show();
+			}else {
+				//$('#spanElectionCode').show();
+			}
+		}
+		settingYN();
+	};
+	
+	
+	function removeElectionName(){
+		
+	}
+
+	
+	function getOldElectionType() {
+		var oldElectionType = "";
+		
+			if($('#electionName').val() == 20151028){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20150429){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20141029){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20140730){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20131204){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20131030){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20130626){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20130424){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20121031){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20121017){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20120627){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20111207){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20111116){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20111026){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20110824){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20110817){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20110427){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20101027){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100728){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20091028){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20090826){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20090429){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20090408){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20081217){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20081029){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080730){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080723){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080625){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20070425){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20070214){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20061025){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060726){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20051026){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20050430){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20041030){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20040605){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20031030){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20030424){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020808){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20121219){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20071219){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20021219){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19971218){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19921218){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19871216){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19810225){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19800827){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19791206){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19780706){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19721223){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19710427){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19670503){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19631015){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19600315){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19560515){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19520805){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19480720){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080409){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20040415){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20000413){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19960411){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19920324){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19880426){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19850212){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19810325){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19781212){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19730227){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19710525){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19670608){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19631126){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19600729){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19580502){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19540520){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19500530){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19480510){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19950627){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19950627){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19950627){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19950627){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080409){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20040415){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+		return oldElectionType;
+	}
+
+	
+	function changeElectionCode(e) {
+		$('#cityCode').val(-1);
+		$('#townCode').val(-1);
+		$('#sggCityCode').val(-1);
+		$('#sggTownCode').val(-1);
+		$('#proportionalRepresentationCode').val(-1);
+
+		previousCityCode = -1;
+		previousTownCode = -1;
+		previousSggCityCode = -1;
+		previousSggTownCode = -1;
+
+		if($('#electionCode').val() == 7){
+			checkPreviousElectionCodeForJdCode_Old($('#electionId').val(), $('#electionName').val());
+		}else {
+			if( getOldElectionType()== 0){
+				checkPreviousCityCodeForSgCode_GuOld($('#electionName').val(), '-1');
+			}else {
+				checkPreviousCityCodeForSgCode_Old($('#electionName').val(), '-1', $('#electionCode').val());
+			}
+		}
+	}
+
+	
+	function changeCityCode(e){
+		var electionType = $('#electionType').val();
+		var electionName = $('#electionName').val();
+
+		if(getOldElectionType() == 0){
+			checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+		}else {
+			checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+		}
+
+		$('#townCode').val(-1);
+		$('#sggCityCode').val(-1);
+		$('#sggTownCode').val(-1);
+
+		previousTownCode = -1;
+		previousSggCityCode = -1;
+		previousSggTownCode = -1;
+
+		changeSelectBox();
+	}
+
+	
+	function changeSggCityCode(e){
+		settingYN();
+		if($('#sggCityCode').val() == -1){
+			$('#spanSubmit').css('display', "none");
+		}
+	}
+
+	
+	function changeTwCode(e) {
+		if($('#townCode').val() == -1){
+			settingYN();
+			$('#spanSubmit').css('display', "none");
+		}else{
+			settingYN();
+		}
+	}
+
+	
+	function createTownCodes(e) {
+		if(getOldElectionType() == 0){
+			checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+		} else {
+			checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+		}
+		//appendAllOption("townCode"); //전체옵션 추가될 경우
+	}
+
+	
+	function changeTownCode(e) {
+		$('#sggTownCode').val(0);
+		changeSelectBox();
+	}
+
+	
+	function changeSggTownCode(e){
+		settingYN();
+	}
+
+	
+	function changeProportionalRepresentationCode(e){
+		settingYN();
+	}
+
+	
+	function changeSelectBox() {
+		var electionId = $('#electionId').val();
+		var electionName = $('#electionName').val();
+		var electionCode = $('#electionCode').val();
+		var cityCode = $('#cityCode').val();
+		var townCode = $('#townCode').val();
+		var sggTownCode = $('#sggTownCode').val();
+
+		if (electionCode == 2) {
+			if(cityCode > 0){
+				if(getOldElectionType() == 0){
+					checkPreviousCityCodeForSggCityCode_GuOld(electionId, electionName, electionCode, cityCode);
+				}else {
+					checkPreviousCityCodeForSggCityCode_Old(electionId, electionName, electionCode, cityCode);
+				}
+			}
+		}else if ( electionCode == 5 || electionCode == 6) {
+			if(cityCode > 0){
+				if(townCode > 0){
+					if(getOldElectionType() == 0){
+						checkPreviousTownCodeForSggTownCode_GuOld(electionId, electionName, electionCode, townCode);
+					}else {
+						checkPreviousTownCodeForSggTownCode_Old(electionId, electionName, electionCode, townCode);
+					}
+				}
+			}
+		/*
+		}else if (electionCode == 8) {
+			if(cityCode > 0){
+				$('#spanGenderCode').css('display', "");
+			}else {
+				$('#spanGenderCode').css('display', "none");
+			}
+		*/
+		}else if (electionCode == 4 || electionCode == 9 || electionCode == 10) {
+
+			if(cityCode > 0){
+
+				if(getOldElectionType() == 0){
+					checkPreviousCityCodeForSggCityCode_GuOld(electionId, electionName, electionCode, cityCode);
+				}else{
+					checkPreviousCityCodeForSggCityCode_Old(electionId, electionName, electionCode, cityCode);
+				}
+			}
+		/*
+		} else if (electionCode == 3 || electionCode == 11) {
+			if(cityCode > 0){
+					$('#spanGenderCode').css('display', "");
+			}
+		*/
+		}
+		settingYN();
+	}
+
+	
+	function settingYN(e) {
+		var electionType = $('#electionType').val();
+		var electionName = $('#electionName').val();
+		var electionCode = $('#electionCode').val();
+		var cityCode = $('#cityCode').val();
+		var townCode = $('#townCode').val();
+		var sggCityCode = $('#sggCityCode').val();
+		var sggTownCode = $('#sggTownCode').val();
+		var proportionalRepresentationCode = $('#proportionalRepresentationCode').val();
+
+		if(electionCode == 3 || electionCode == 11){
+			appendAllOption('cityCode');
+			//removeOption('cityCode',-1);
+			//cityCode = $('#cityCode').val();
+		}else{
+			removeAllOption('cityCode');
+		}
+
+		if (electionCode == 1){
+			if (electionName == -1){
+				selectBoxShow("none", "none", "none", "none", "none");
+			}else{
+				selectBoxShow("none", "none", "none", "none", "");
+			}
+		}else if (electionCode == 2){
+			$('#spanProportionalRepresentationCode').css('display', "none");
+			if (electionName == -1){
+				selectBoxShow("none", "none", "none", "none", "none");
+			}else {
+				$('#spanElectionCode').css('display', "");
+				if (cityCode == -1){
+					selectBoxShow("", "none", "none", "none", "none");
+				}else {
+					selectBoxShow("", "none", "none", "none", "");
+				}
+			}
+		}else if (electionCode == 7){
+			$('#spanCityCode').css('display', "none");
+			if(electionName==-1){
+				selectBoxShow("none", "none", "none", "none", "none");
+				$('#spanProportionalRepresentationCode').css('display', "none");
+			}
+			else{
+				$('#spanElectionCode').css('display', "");
+				$('#spanProportionalRepresentationCode').css('display', "");
+				if(proportionalRepresentationCode == -1){
+					selectBoxShow("none", "none", "none", "none", "none");
+				}else {
+					selectBoxShow("none", "none", "none", "none", "");
+				}
+			}
+		}else if (electionCode == 3 || electionCode == 8 || electionCode == 11){
+			$('#spanElectionCode').css('display', "");
+			$('#spanProportionalRepresentationCode').css('display', "none");
+			if(cityCode >= 0){
+				selectBoxShow("", "none", "none", "none", "");
+			}else {
+				selectBoxShow("", "none", "none", "none", "none");
+			}
+		}else if (electionCode == 4 || electionCode == 9 || electionCode == 10){
+			$('#spanElectionCode').css('display', "");
+			$('#spanProportionalRepresentationCode').css('display', "none");
+			if(cityCode >= 0){
+				if(sggCityCode >= 0){
+					selectBoxShow("", "none", "", "none", "");
+				}else {
+					selectBoxShow("", "none", "", "none", "none");
+				}
+			}else {
+				selectBoxShow("", "none", "none", "none", "none");
+			}
+		}else if (electionCode == 5 || electionCode == 6){
+			$('#spanElectionCode').css('display', "");
+			$('#spanProportionalRepresentationCode').css('display', "none");
+			//alert("cityCode=" + cityCode + "   townCode=" + townCode);
+			if(cityCode >= 0){
+				if(townCode >= 0){
+					if(sggTownCode >= 0 ){
+						selectBoxShow("", "", "none", "", "");
+					}else {
+						selectBoxShow("", "", "none", "", "none");
+					}
+				}else {
+					selectBoxShow("", "", "none", "none", "none");
+				}
+			}else {
+				selectBoxShow("", "none", "none", "none", "none");
+			}
+		}else {
+			selectBoxShow("none", "none", "none", "none", "none");
+		}
+
+		if(electionCode >= 0){
+			$('#wub_select').css('display','');
+		}
+		
+		if(electionCode == '' || electionCode == null){
+			$('#electionCode').val(-1);
+		}
+	}
+
+	
+	function selectBoxShow(citySpanStyle, townSpanStyle, sggCitySpanStyle, sggTownSpanStyle, submitSpanStyle) {
+		$('#spanCityCode').css('display', citySpanStyle);
+		$('#spanTownCode').css('display', townSpanStyle);
+		$('#spanSggCityCode').css('display', sggCitySpanStyle);
+		$('#spanSggTownCode').css('display', sggTownSpanStyle);
+		$('#spanSubmit').css('display', submitSpanStyle);
+	}
+
+	
+	function chooseStatementId() {
+		var statementId = "";
+		var electionType = $('#electionType').val();
+		var electionCode = $('#electionCode').val();
+		var proportionalRepresentationCode = $('#proportionalRepresentationCode').val();
+
+		if(getOldElectionType() == 0){
+			$('#statementId').val('CPRI03_#91');
+		}else {
+			$('#statementId').val('CPRI03_#1');
+		}
+	}
+
+	
+	function setElectionCode(code){
+		$('#wub_select').css('display', '');
+
+		
+		if(2 == code){
+			$('#electionId'+2).addClass('on');
+		}else{
+			$('#electionId'+2).removeClass('on');
+		};
+		
+		if(7 == code){
+			$('#electionId'+7).addClass('on');
+		}else{
+			$('#electionId'+7).removeClass('on');
+		};
+		
+
+		$('#electionCode').val(code);
+		if(getOldElectionType()== 0){
+			checkPreviousCityCodeForSgCode_GuOld($('#electionName').val(), '-1');
+		} else {
+			checkPreviousCityCodeForSgCode_Old($('#electionName').val(), '-1');
+		}
+		$('#cityCode').val(-1);
+		settingYN();
+	}
+
+	
+	function setElectionType(type){
+		$('#spanSubmit').css('display', 'none');
+		$('#spanCityCode').css('display', 'none');
+		$('#spanSggCityCode').css('display', 'none');
+
+		$('#wub_select').css('display', '');
+			
+			if(1 == type){
+				$('#electionType'+1).addClass('on');
+			}else{
+				$('#electionType'+1).removeClass('on');
+			};
+			
+			if(2 == type){
+				$('#electionType'+2).addClass('on');
+			}else{
+				$('#electionType'+2).removeClass('on');
+			};
+			
+			if(4 == type){
+				$('#electionType'+4).addClass('on');
+			}else{
+				$('#electionType'+4).removeClass('on');
+			};
+			
+			if(0 == type){
+				$('#electionType'+0).addClass('on');
+			}else{
+				$('#electionType'+0).removeClass('on');
+			};
+			
+			if(11 == type){
+				$('#electionType'+11).addClass('on');
+			}else{
+				$('#electionType'+11).removeClass('on');
+			};
+			
+		$('#electionType').val(type);
+		changeElectionType();
+	}
+//]]>
+</script>
+
+
+<div id="container">
+<div id="container_inner" class="clearfix">
+
+    <div id="contentarea">
+    
+        <div class="titlearea">
+            <h3 class=pt_CP>후보자</h3>
+            <div class="r_title">
+            	<h4 class="prevT">후보자 명부</h4>
+            	<ul class="location">
+                    <li class="home">홈</li>
+                    <li>역대선거정보</li>
+                    <li>후보자</li>
+                    <li>후보자 명부</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bodyarea">
+			<div class="filter">
+				<form id="searchForm" action="/electioninfo/electionInfo_report.xhtml" method="post">
+					<input type="hidden" id="electionId" name="electionId" value="0000000000" />
+<input type="hidden" id="requestURI" name="requestURI" value="/WEB-INF/jsp/electioninfo/0000000000/cp/cpri03.jsp" />
+<input type="hidden" id="topMenuId" name="topMenuId" value='CP' />
+<input type="hidden" id="secondMenuId" name="secondMenuId" value='CPRI03' />
+<input type="hidden" id="menuId" name="menuId" value='CPRI03' />
+<input type="hidden" id="statementId" name="statementId" value="0000000000.CPRI03_#1" />
+					<input type="hidden" id="oldElectionType" name="oldElectionType" value="1"/>
+					
+					<div class="f_select">
+                        <dl>
+	                        <dt>선거유형</dt>
+	                        <dd>
+								<a id="electionType1" href="javascript:setElectionType(1);" >대통령선거</a>
+									<a id="electionType2" href="javascript:setElectionType(2);" class="on">국회의원선거</a>
+									<a id="electionType4" href="javascript:setElectionType(4);" >지방선거</a>
+									</dd>
+						</dl>
+					</div>
+					
+					<div class="f_search">
+                        <dl>
+                            <dt></dt>
+                            <dd>	
+								<span id="wub_select" style="display:none;" >
+									<div class="wub_select1">
+										<select name="electionType" id="electionType" style="display:none;">
+											<option value="-1">▽ 선 택</option>
+											<option value="1" >대통령선거</option>
+											<option value="2" selected="selected">국회의원선거</option>
+											<option value="4" >지방선거</option>
+											<option value="0" >재·보궐선거</option>
+											<option value="11" >교육감선거</option>
+											</select>
+										
+										<span id="spanElectionName" style="display:none">
+											<select name="electionName" id="electionName">
+												<option value="-1">▽ 선 택</option>
+												<option value='20120411' >제19대</option>
+												<option value='20080409' selected="selected">제18대</option>
+												<option value='20040415' >제17대</option>
+												<option value='20000413' >제16대</option>
+												<option value='19960411' >제15대</option>
+												<option value='19920324' >제14대</option>
+												<option value='19880426' >제13대</option>
+												<option value='19850212' >제12대</option>
+												<option value='19810325' >제11대</option>
+												<option value='19781212' >제10대</option>
+												<option value='19730227' >제9대</option>
+												<option value='19710525' >제8대</option>
+												<option value='19670608' >제7대</option>
+												<option value='19631126' >제6대</option>
+												<option value='19600729' >제5대</option>
+												<option value='19580502' >제4대</option>
+												<option value='19540520' >제3대</option>
+												<option value='19500530' >제2대</option>
+												<option value='19480510' >제1대</option>
+												</select>
+										</span>
+										
+										<span id="spanElectionCode" style="display:none;" >
+											<label id='electionLabel' for="electionCode">선거</label>
+											<select id='electionCode' name='electionCode'>
+												<option value="-1">▽ 선 택</option>
+												<option value="2" selected>국회의원선거</option>
+												<option value="7" >비례대표국회의원선거</option>
+												</select>
+										</span>
+										
+										<span id="spanCityCode" style="display:none;" >
+											<label id="cityCodeLabel" class="label" for="cityCode">시도</label>
+											<select id="cityCode" name="cityCode">
+												<option value="-1">▽ 선 택</option>
+												<option value="0" >▷ 전 체</option>
+												<option value="1100" selected="selected">서울특별시</option>
+												<option value="2600" >부산광역시</option>
+												<option value="2700" >대구광역시</option>
+												<option value="2800" >인천광역시</option>
+												<option value="2900" >광주광역시</option>
+												<option value="3000" >대전광역시</option>
+												<option value="3100" >울산광역시</option>
+												<option value="4100" >경기도</option>
+												<option value="4200" >강원도</option>
+												<option value="4300" >충청북도</option>
+												<option value="4400" >충청남도</option>
+												<option value="4500" >전라북도</option>
+												<option value="4600" >전라남도</option>
+												<option value="4700" >경상북도</option>
+												<option value="4800" >경상남도</option>
+												<option value="4900" >제주특별자치도</option>
+												</select>
+										</span>
+										
+										<span id="spanProportionalRepresentationCode" style="display:none;" >
+											<label id="proportionalRepresentationCodeLabel" class="label" for="proportionalRepresentationCode">비례정당</label>
+											<select id="proportionalRepresentationCode" name="proportionalRepresentationCode">
+												<option value="-1">▽ 선 택</option>
+												<option value="0"  >▷ 전 체</option>
+												<option value="100" >통합민주당</option>
+												<option value="200" >한나라당</option>
+												<option value="550" >자유선진당</option>
+												<option value="300" >민주노동당</option>
+												<option value="650" >창조한국당</option>
+												<option value="600" >친박연대</option>
+												<option value="653" >경제공화당</option>
+												<option value="657" >경제통일당</option>
+												<option value="1000" >구국참사람연합</option>
+												<option value="680" >국민실향안보당</option>
+												<option value="700" >국제녹색당</option>
+												<option value="800" >기독당</option>
+												<option value="900" >문화예술당</option>
+												<option value="1200" >시민당</option>
+												<option value="1300" >시스템미래당</option>
+												<option value="1400" >신미래당</option>
+												<option value="1500" >자유평화당</option>
+												<option value="1650" >직능연합당</option>
+												<option value="1680" >진보신당</option>
+												<option value="1700" >통일당</option>
+												<option value="1800" >평화통일가정당</option>
+												<option value="1750" >평화통일당</option>
+												<option value="1100" >한국당</option>
+												<option value="1900" >한국사회당</option>
+												<option value="2000" >화합과도약을위한국민연대</option>
+												</select>
+										</span>
+										
+										<span id="spanSggCityCode" style="display:none">
+											<label id='sggCityCodeLabel' class='label' for="sggCityCode">선거구(시도)</label>
+											<select id='sggCityCode' name='sggCityCode' tabindex="4">
+												<option value="-1">▽ 선 택</option>
+												<option value="0" >▷ 전 체</option>
+												</select>
+										</span>
+										
+										<span id="spanTownCode" style="display:none;" >
+											<label id='townCodeLabel' class='label' for="townCode">구시군</label>
+											<select id='townCode' name='townCode'>
+												<option value="-1">▽ 선 택</option>
+												</select>
+										</span>
+										
+										<span id="spanSggTownCode" style="display:none">
+											<label id='sggTownCodeLabel' class='label' for="sggTownCode">선거구(구시군)</label>
+											<select id='sggTownCode' name='sggTownCode' tabindex="6">
+												<option value="-1">▽ 선 택</option>
+												<option value="0" >▷ 전 체</option>
+												</select>
+										</span>
+										
+										<span id="spanSubmit" style="display:none;" >
+											<input id="searchBtn" type="image" src="../../common/images/common/btn_search.png" alt="검색" title="검색"/>
+										</span>
+						            </div>
+								</span>
+							</dd>
+						</dl>
+					</div>
+				</form>
+			</div>
+
+			<div class="searchResult">
+					<div class="result_top">
+	                    <h5>결과보기</h5>
+	               		<p class="selectCondition">
+				            <span id="electionOrder"></span>
+				       		<span id="electionTitle"></span>
+				       		<span id="electionSubject"></span>
+							<span id="cityName"></span>
+							<span id="townSubject"></span>
+							<span id="sggCitySubject"></span>
+							<span id="sggTownSubject"></span>
+		                </p>
+		                <div class="r_btn">
+							<a onclick="listFileDownload('후보자 명부', 'print')" class="dt_print" title="Print download">Print</a>
+							<a onclick="listFileDownload('후보자 명부', 'hwp')" class="dt_down" title="HWP download">HWP</a>
+							<a onclick="listFileDownload('후보자 명부', 'pdf')" class="dt_down" title="PDF download">PDF</a>
+							<a onclick="listFileDownload('후보자 명부', 'xls')" class="dt_down" title="XLS download">XLS</a>
+							<a onclick="listFileDownload('후보자 명부', 'report')" class="dt_down" title="Ubi Report">Report</a>
+						</div>
+	                </div>
+
+					<div class="cont_table">
+						<table id="table01" class="table01" summary="후보자 명부">
+								<caption>후보자 명부</caption>
+								<colgroup>
+								<col style="width:auto;"/>
+									<col style="width:40px;"/>
+									<col style="width:auto;"/>
+									<col style="width:90px;"/>
+									<col style="width:40px;"/>
+									<col style="width:auto;"/>
+									<col style="width:120px;"/>
+									<col style="width:150px;"/>
+									<col style="width:220px;"/>
+								</colgroup>
+								<thead>
+									<tr>
+									<th class="firstTh">선거구명</th>
+									<th>기호</th>
+											<th>정당명</th>
+										<th>성명<br/>(한자)</th>
+										<th>성별</th>
+										<th>생년월일<br/>(연령)</th>
+										<th>직업</th>
+										<th>학력</th>
+										<th>경력</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+												<td class="firstTd">종로구</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>손학규<br/>(孫鶴圭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1947/11/22<br/>(60세)</td>
+													<td>정당인(통합민주당 대표)</td>
+													<td>영국 옥스퍼드대학교대학원 정치학박사</td>
+													<td>경기도지사<br/>보건복지부 장관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">종로구</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>박진<br/>(朴振)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/09/16<br/>(51세)</td>
+													<td>국회의원</td>
+													<td>영국 옥스퍼드대학교 정치학박사</td>
+													<td>한나라당종로구국회의원(16·17대)<br/>제17대 대통령직인수위원회 외교·통일·안보분과 간사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">종로구</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>정인봉<br/>(鄭寅鳳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/12/10<br/>(54세)</td>
+													<td>변호사</td>
+													<td>서울대학교 법학과 졸업</td>
+													<td>(전)판사<br/>(전)국회의원(종로)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">종로구</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>최현숙<br/>(崔賢淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1957/10/08<br/>(50세)</td>
+													<td>정당인</td>
+													<td>덕성여자대학교 가정학과 졸업</td>
+													<td>천주교장기수가족후원회회장<br/>민주노동당 성소수자위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">종로구</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김영동<br/>(金永東)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/03/10<br/>(54세)</td>
+													<td>정당인</td>
+													<td>경기대학교 대학원 졸업(경영학 박사)</td>
+													<td>경기대학교 강사<br/>초종교초국가평화의회(IIPC) 한국본부 사무총장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>정범구<br/>(鄭範九)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/03/27<br/>(54세)</td>
+													<td>시사평론가</td>
+													<td>독일 marburg대학 정치학 박사(Dr. Phil)</td>
+													<td>제 15대 대통령후보 합동TV토론 사회자<br/>제 16대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>나경원<br/>(羅卿瑗)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1963/12/06<br/>(44세)</td>
+													<td>(&#29694;)제17대 국회의원</td>
+													<td>서울대 법과대학 졸업</td>
+													<td>(&#29694;)제17대 국회의원<br/>(&#21069;)한나라당 대변인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>신은경<br/>(申恩卿)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1958/12/23<br/>(49세)</td>
+													<td>정당인(자유선진당 대변인)</td>
+													<td>영국웨일스대학 언론대학원 언론학 (박사) 졸업 </td>
+													<td>(&#21069;) KBS 9시뉴스 앵커<br/>(&#21069;) 한세대학교 교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김인식<br/>(金仁植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/07/18<br/>(39세)</td>
+													<td>정당인</td>
+													<td>한국외국어대 동양어대학 아랍어과 3년 수료</td>
+													<td>17대 대선 민주노동당 권영길 후보 중구 선대본부장<br/>민주노동당 서울시당 중구위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>오형석<br/>(吳炯錫)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/05/16<br/>(40세)</td>
+													<td>건국대 외래교수</td>
+													<td>건국대 대학원 법학과 박사과정 졸업</td>
+													<td>(전)한국방송통신대 외래교수<br/>(현)중구 지역발전 포럼 대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중구</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>한만억<br/>(韓萬億)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/12/20<br/>(53세)</td>
+													<td>사회사업</td>
+													<td>한국방송통신대학교 영어영문학과 졸업</td>
+													<td>(전)서울건강신문 대표<br/>(현)가정건강연구소 이사장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">용산구</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>성장현<br/>(成章鉉)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1955/05/17<br/>(52세)</td>
+													<td>정당인</td>
+													<td>단국대학교 행정대학원 졸업(행정학박사)</td>
+													<td>34대 용산구청장<br/>제17대 대통령선거 민주당 중앙당 유세본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">용산구</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>진영<br/>(陳永)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1950/10/23<br/>(57세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 법과대학 법학과 졸업</td>
+													<td>한나라당 박근혜대표 최고위원 비서실장<br/>서울지방법원 남부지원 판사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">용산구</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>이인숙<br/>(李仁淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1954/01/28<br/>(54세)</td>
+													<td>주부</td>
+													<td>이화여자대학교 건강교육학과 졸업</td>
+													<td>서울여고 교사<br/>혜원여고 교사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">용산구</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김종민<br/>(金鍾珉)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/11/18<br/>(37세)</td>
+													<td>정당인</td>
+													<td>서강대학교 생명과학과 졸업</td>
+													<td>2006년 용산구청장 후보<br/>신용카드 가맹점 수수료 인하 운동 용산구 본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">용산구</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김만호<br/>(金萬晧)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/02/25<br/>(44세)</td>
+													<td>정당인</td>
+													<td>미국 캘리포니아 유니온대학교 박사 졸업</td>
+													<td>평화통일가정당 곽정환총재 상임특보<br/>미국지도자연합(ALC) 샌프란시스코 의장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>최재천<br/>(崔載千)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/11/19<br/>(44세)</td>
+													<td>국회의원</td>
+													<td>전남대학교 대학원 법학박사</td>
+													<td>(현)법무법인한강 대표<br/>(현)김대중평화센터 고문</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>진수희<br/>(陳壽姬)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1955/11/12<br/>(52세)</td>
+													<td>국회의원</td>
+													<td>미국 일리노이대학교 대학원 졸업(철학박사)</td>
+													<td>제17대 국회의원<br/>제17대 대통령직인수위원회 정무분과 간사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>최창준<br/>(崔昌埈)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1955/02/14<br/>(53세)</td>
+													<td>정당인</td>
+													<td>연세대학교 화학과 졸업</td>
+													<td>(전)민주노동당 서울시당 부위원장<br/>(현)서울동부비정규센터 대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>정일권<br/>(鄭日權)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/02/26<br/>(45세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학과 졸업</td>
+													<td>(전) 평화통일가정연합 일본 마에바시 지회장<br/>(현) 평화통일가정당 성동구 당협위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>임종석<br/>(任鍾晳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/04/24<br/>(41세)</td>
+													<td>국회의원</td>
+													<td>한양대학교 무기재료공학과 졸업</td>
+													<td>제16.17대 국회의원<br/>통합민주당 원내수석부대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김동성<br/>(金東聖)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/01/11<br/>(37세)</td>
+													<td>변호사</td>
+													<td>서울대학교 법학과 졸업</td>
+													<td>(전)인천지방법원 판사<br/>(전)SBS '솔로몬의 선택' 출연 변호사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성동구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>한용대<br/>(韓用大)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/02/28<br/>(37세)</td>
+													<td>정당인</td>
+													<td>전남대학교 축산학과 졸업</td>
+													<td>(현) 참가정실천운동본부 성동구지부장<br/>(현) 세계평화청년연합 자문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>임동순<br/>(任東淳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/02/09<br/>(54세)</td>
+													<td>정당인</td>
+													<td>초당대학교 사회체육학과졸업</td>
+													<td>제5대 서울시 의원<br/>민주당 17대 국회의원후보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>권택기<br/>(權宅起)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/07/27<br/>(42세)</td>
+													<td>정당인</td>
+													<td>서강대학교 경영학과 졸업</td>
+													<td>이명박 대통령 당선인 비서실 정무기획2팀장<br/>미 존스홉킨스대 국제관계대학원 객원연구원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구갑</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>김준교<br/>(金俊敎)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1982/02/16<br/>(26세)</td>
+													<td>정당인</td>
+													<td>카이스트 산업공학과 졸업</td>
+													<td>무소속 이회창 후보 사이버 보좌역 및 수행<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김영준<br/>(金榮俊)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/12/04<br/>(43세)</td>
+													<td>정당인</td>
+													<td>서울대학교 전기공학과 졸업</td>
+													<td>(현)평화통일가정당총재 상임특보<br/>(현)세계NGO연합 아시아 사무총장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>추미애<br/>(秋美愛)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1958/10/23<br/>(49세)</td>
+													<td>변호사</td>
+													<td>한양대학교 법학과 졸업</td>
+													<td>제15대, 제16대 국회의원<br/>춘천·인천·전주 지방법원, 광주고등법원 판사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>박명환<br/>(朴明煥)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/03/03<br/>(38세)</td>
+													<td>법무법인 대표 변호사</td>
+													<td>연세대학교 대학원 법학과 졸업(법학석사)</td>
+													<td>법무법인 비전인터내셔널 대표 변호사(현)<br/>'MB연대' 전국대표(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>김홍준<br/>(金洪俊)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/05/12<br/>(48세)</td>
+													<td>성균개발(주) 대표이사</td>
+													<td>성균관대학교 경제학과 졸업</td>
+													<td>참여하는 4050 전문가 연대(참사련) 지도위원<br/>나라사랑 모임 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>이중원<br/>(李中遠)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/11/20<br/>(42세)</td>
+													<td>정당인</td>
+													<td>한국외국어대학교 무역학과 졸업</td>
+													<td>2006년 4대 동시지방선거 '광진구청장'후보<br/>현)민주노동당 광진구위원회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>전지명<br/>(全芝命)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/03/18<br/>(55세)</td>
+													<td>기업인</td>
+													<td>연세대학교 경영대학원 졸업(국제경영 석사)</td>
+													<td>친박연대 상근 부대변인<br/>대한민국 경영인 신지식인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">광진구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김정호<br/>(金正浩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/02/26<br/>(55세)</td>
+													<td>정당인</td>
+													<td>경희대학교 산업공학과 졸업</td>
+													<td>(전)세계일보 사회부기자<br/>남북통일국민연합 사무국장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김희선<br/>(金希宣)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1943/10/28<br/>(64세)</td>
+													<td>국회의원</td>
+													<td>대전여자상업고등학교 2년 중퇴</td>
+													<td>국회정무위원회 위원장<br/>여성의 전화 초대 원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>장광근<br/>(張光根)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/01/08<br/>(54세)</td>
+													<td>정당인</td>
+													<td>연세대학교 정치외교학과 졸업</td>
+													<td>제14대,16대 국회의원<br/>제17대 대통령 경선 한나라당 이명박 후보 대변인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>방종옥<br/>(方鍾玉)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1972/10/17<br/>(35세)</td>
+													<td>정당인</td>
+													<td>경희대학교 생물학과 졸업</td>
+													<td>동대문구 학교급식조례제정운동본부 공동대표<br/>민주노동당 서울시당 동대문구위원회위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>김정석<br/>(金丁錫)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/07/13<br/>(53세)</td>
+													<td>건설업</td>
+													<td>경희대학교 행정대학원 안보정책학과 졸업</td>
+													<td>(전)동대문구의원<br/>(주)프레리건설 대표이사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>박상선<br/>(朴相善)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/12/24<br/>(49세)</td>
+													<td>정당인</td>
+													<td>서울대학교 대학원 졸업(교육학 석사)</td>
+													<td>(전)남북통일운동국민연합 서울북부 사무국장<br/>(현)평화통일가정당 중앙위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구갑</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>장호권<br/>(張豪權)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1949/05/14<br/>(58세)</td>
+													<td>제조업</td>
+													<td>이화여자대학부속 이화 . 금란 고등학교 졸업</td>
+													<td>(전)장준하 사상계 발행인<br/>(현)고구려문화연구회 이사장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>민병두<br/>(閔丙?)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/06/10<br/>(49세)</td>
+													<td>국회의원</td>
+													<td>성균관대학교 무역학과 졸업</td>
+													<td>문화일보 워싱턴 특파원<br/>열린정책연구원 수석부원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>홍준표<br/>(洪準杓)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/12/05<br/>(53세)</td>
+													<td>국회의원</td>
+													<td>고려대학교 법과대학 행정학과 졸업</td>
+													<td>제15,16,17대 국회의원<br/>제17대 국회환경노동위원회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동대문구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>박용만<br/>(朴容萬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1951/12/04<br/>(56세)</td>
+													<td>정당인</td>
+													<td>미기재</td>
+													<td>남북통일국민운동연합 중앙위원<br/>(전)세계평화통일가정연합 목사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>임성락<br/>(林成洛)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/11/23<br/>(45세)</td>
+													<td>치과의사</td>
+													<td>전남대학교 치의학과 졸업</td>
+													<td>통합민주당 소상공인발전위원회 위원장<br/>중랑평화포럼대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>유정현<br/>(柳政鉉)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/10/24<br/>(40세)</td>
+													<td>정당인</td>
+													<td>연세대학교 언론홍보 대학원 졸업</td>
+													<td>전 SBS 아나운서<br/>제17대 대통령선거 중앙선대위 유세지원단 문화예술총괄팀 홍보위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>김철기<br/>(金喆基)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/08/31<br/>(51세)</td>
+													<td>(주) 아이보트 대표</td>
+													<td>명지대학원 체육학 석사 졸업</td>
+													<td>친박연대 사무총장<br/>한국권투위원회 회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김종묵<br/>(金宗默)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/01/01<br/>(56세)</td>
+													<td>목회자</td>
+													<td>한국방송통신대학교 영어영문학과 4학년 재학</td>
+													<td>초종교 초국가 연합 중랑지부장<br/>평화통일가정당 중랑구갑 당원협의회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>강경환<br/>(姜炅煥)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/05/21<br/>(42세)</td>
+													<td>정치인</td>
+													<td>진주농림전문대학(현 진주산업대학교) 2년 졸업</td>
+													<td>제15,16,17대 국회의원입후보<br/>저서:꿈과도전,선택하기는 쉬워도 선택받기는 어려운일이다.</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구갑</td>
+												<td class="alignC">9</td>
+														<td>무소속</td>
+													<td class=alignC>이상수<br/>(李相洙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1946/12/10<br/>(61세)</td>
+													<td>변호사</td>
+													<td>고려대학교 법학과 졸업</td>
+													<td>3선 국회의원<br/>노동부 장관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김덕규<br/>(金德圭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1941/03/09<br/>(67세)</td>
+													<td>국회의원</td>
+													<td>고려대학교 정치외교학과 졸업</td>
+													<td>17대 국회부의장<br/>16대 국회 정보위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>진성호<br/>(秦聖昊)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/11/26<br/>(45세)</td>
+													<td>정당인</td>
+													<td>서울대학교 경영학과 졸업</td>
+													<td>제17대 대통령선거 한나라당 중앙선대위 뉴미디어 팀장<br/>대통령직 인수위원회 전문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>이용휘<br/>(李龍徽)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/02/20<br/>(46세)</td>
+													<td>정당인</td>
+													<td>한국방송통신대학교 법학과 1년 재학 중</td>
+													<td>전) 박근혜 경선캠프 사이버,문화위원장<br/>전) '한미준' 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>전권희<br/>(全權熙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/02/06<br/>(37세)</td>
+													<td>정당인</td>
+													<td>고려대학교 경영학과 졸업</td>
+													<td>현) 민주노동당 중랑구 위원회 위원장<br/>현) 민주노동당 중랑구 <신용회복상담센터> 소장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>심우범<br/>(沈愚範)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/08/29<br/>(53세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학전문대학원 목회학 박사 졸업</td>
+													<td>통일부 통일교육위원<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">중랑구을</td>
+												<td class="alignC">7</td>
+														<td>무소속</td>
+													<td class=alignC>강동호<br/>(康東鎬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1944/02/12<br/>(64세)</td>
+													<td>서울외국어대학원대학교 총장</td>
+													<td>경희대학교 대학원 정치외교학과 졸업</td>
+													<td>한나라당 중랑(을)당원협의회 위원장<br/>서울외국어대학원대학교 총장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>손봉숙<br/>(孫鳳淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1944/03/17<br/>(64세)</td>
+													<td>국회의원</td>
+													<td>이화여자대학교 대학원 졸업(정치학 박사)</td>
+													<td>중앙선거관리위원회 위원(전)<br/>정치개혁시민연대 공동대표(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>정태근<br/>(鄭泰根)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/01/08<br/>(44세)</td>
+													<td>정당인</td>
+													<td>연세대학교 상경대학 경제학과 졸업</td>
+													<td>서울특별시 부시장(전)<br/>이명박 대통령후보 수행단장(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>정태흥<br/>(鄭泰興)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/06/25<br/>(36세)</td>
+													<td>정당인</td>
+													<td>고려대학교 법학과 졸업</td>
+													<td>고려대학교 총학생회장(전)<br/>민주노동당 기획조정국장(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김형준<br/>(金亨俊)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1974/01/14<br/>(34세)</td>
+													<td>회사원</td>
+													<td>인하대학교 미술교육학과 졸업</td>
+													<td>남북통일운동국민연합 중앙위원<br/>(전)참가정실천운동본부 성북지부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>박찬희<br/>(朴贊熙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/01/20<br/>(49세)</td>
+													<td>트라텍정보통신(주) 전무</td>
+													<td>서울대학교 인문대학 서양사학과 졸업</td>
+													<td>국민일보정치부장(전)<br/>민주당 대변인(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김효재<br/>(金孝在)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/05/14<br/>(55세)</td>
+													<td>정당인</td>
+													<td>고려대학교 사회학과 졸업</td>
+													<td>전)조선일보 논설위원<br/>전)대통령직인수위원회 상임자문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구을</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>박창완<br/>(朴昶完)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/03/30<br/>(49세)</td>
+													<td>정당인</td>
+													<td>경남대학교 대학원 법학과 졸업</td>
+													<td>사단법인 금융경제연구소 객원연구위원<br/>진보신당 서울시당 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>정종수<br/>(鄭鍾洙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/11/26<br/>(40세)</td>
+													<td>목사</td>
+													<td>광주상업고등학교 졸업</td>
+													<td>세계평화청년연합성북구지회장<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">성북구을</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>신계륜<br/>(申溪輪)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/08/13<br/>(53세)</td>
+													<td>정치인</td>
+													<td>고려대학교 법과대학 행정학과 졸업</td>
+													<td>서울시 정무부시장(전)<br/>제14, 16, 17대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>오영식<br/>(吳泳食)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/02/28<br/>(41세)</td>
+													<td>국회의원</td>
+													<td>고려대학교대학원 경영학과 박사과정 재학중(7학기)</td>
+													<td>제16대·17대 국회의원<br/>고려대학교 총학생회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>정양석<br/>(鄭亮碩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/11/25<br/>(49세)</td>
+													<td>정당인</td>
+													<td>서강대학교 공공정책대학원졸업 (정치학석사)</td>
+													<td>이명박 대통령후보 유세부단장<br/>한나라당 강북갑 당협위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구갑</td>
+												<td class="alignC">5</td>
+														<td>창조한국당</td>
+													<td class=alignC>김서진<br/>(金西鎭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/01/09<br/>(49세)</td>
+													<td>KH정보교육원 이사장</td>
+													<td>북한대학원대학교 박사과정수료(경제전공)</td>
+													<td>(전)경제정의실천시민연합(경실련) 기획실장<br/>(현)민주평화통일자문회의 상임위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김용하<br/>(金容夏)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1949/10/04<br/>(58세)</td>
+													<td>정당인</td>
+													<td>한국방송통신대학교 영어영문학과 2년 중퇴</td>
+													<td>남북통일운동국민연합 중앙위원<br/>참가정실천운동본부 강북지부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>최규식<br/>(崔奎植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/11/17<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 철학과 졸업</td>
+													<td>(전)한국일보 편집국장<br/>(현)17대 서울 강북을 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이수희<br/>(李秀姬)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1970/12/10<br/>(37세)</td>
+													<td>변호사</td>
+													<td>서강대학교 정치외교학과 졸업</td>
+													<td>대통령직인수위원회 법무행정분과 자문위원<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>임강신<br/>(林康伸)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1942/02/07<br/>(66세)</td>
+													<td>자유기고가(칼람리스트)</td>
+													<td>고려대학교 문리대 영문학과 졸업  </td>
+													<td>2002년 대선 이회창후보 교육분과위 부위원장<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김혜신<br/>(金蕙信)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1972/10/24<br/>(35세)</td>
+													<td>정당인</td>
+													<td>덕성여자대학교 수학과 수료</td>
+													<td>강북구의원 의정비인하 민주노동당운동본부장<br/>비정규직차별철폐, 한미FTA저지 민주노동당강북운동본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>박용진<br/>(朴用鎭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/04/17<br/>(36세)</td>
+													<td>정당인</td>
+													<td>성균관대학교 사회학과 졸업</td>
+													<td>(전) 민주노동당 대변인<br/>강북구 의정비인하 운동본부 대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강북구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>조한복<br/>(趙漢福)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/03/03<br/>(44세)</td>
+													<td>정당인</td>
+													<td>중앙대학교 문과대학 심리학과 졸업</td>
+													<td>한국청소년순결운동본부 서울시회장<br/>세계평화청년연합 강북구지부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김근태<br/>(金槿泰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1947/02/14<br/>(61세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 경제학과 졸업</td>
+													<td>(전)보건복지부 장관<br/>15·16·17대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>신지호<br/>(申志鎬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/06/23<br/>(44세)</td>
+													<td>사회운동가</td>
+													<td>일본 게이오대학 정치학 박사</td>
+													<td>자유주의연대 대표<br/>삼성경제연구소 수석연구원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김승교<br/>(金承敎)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/09/25<br/>(39세)</td>
+													<td>변호사</td>
+													<td>고려대학교 법학과 졸업</td>
+													<td>(전)한성대학교 부동산대학원 외래교수<br/>(전)대북송금특검 특별수사관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>이현재<br/>(李賢宰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1977/07/23<br/>(30세)</td>
+													<td>정당인</td>
+													<td>서원대학교 경영정보학과 졸업</td>
+													<td>ROTC 38기<br/>(사)한국청소년순결운동본부 자문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구갑</td>
+												<td class="alignC">7</td>
+														<td>무소속</td>
+													<td class=alignC>홍우철<br/>(洪禹哲)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/08/18<br/>(53세)</td>
+													<td>회사원(서울메트로)</td>
+													<td>경기공업개방대학(현서울산업대학교) 기계공학과 졸업</td>
+													<td>17대 총선 출마<br/>2006년 도봉구청장 출마</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>유인태<br/>(柳寅泰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1948/09/05<br/>(59세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 문리과대학 사회학과졸업</td>
+													<td>14·17대 국회의원<br/>통합민주당 최고위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김선동<br/>(金善東)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/10/09<br/>(44세)</td>
+													<td>정당인</td>
+													<td>고려대학교대학원 정치외교학 석사</td>
+													<td>박근혜대표 비서실 부실장<br/>도봉을 당원협의회 운영위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">도봉구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>황인춘<br/>(黃仁春)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/09/08<br/>(38세)</td>
+													<td>정당인</td>
+													<td>선문대학교 사회복지대학원 졸업(가족치료석사)</td>
+													<td>(전)참가정실천운동 중앙위원<br/>여성가족부 건강가정사 1기</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>정봉주<br/>(鄭鳳株)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/07/02<br/>(47세)</td>
+													<td>국회의원</td>
+													<td>한국외국어대학교 영어과 졸업</td>
+													<td>17대 국회의원<br/>(주)한국외대 외대어학원 CEO</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>현경병<br/>(玄鏡柄)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/11/05<br/>(45세)</td>
+													<td>한나라당 노원갑 당협위원장</td>
+													<td>서울대학교 행정대학원 졸업(정책학 전공)</td>
+													<td>행정고시 합격(29회)<br/>17대 대선 한나라당 이명박후보 서울 전략기획본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>함승희<br/>(咸承熙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1951/02/10<br/>(57세)</td>
+													<td>법무법인 대륙 대표 변호사</td>
+													<td>서울대학교 법학과 졸업</td>
+													<td>제16대 국회의원<br/>현 친박연대 최고위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구갑</td>
+												<td class="alignC">7</td>
+														<td>진보신당</td>
+													<td class=alignC>김의열<br/>(金義烈)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1961/08/15<br/>(46세)</td>
+													<td>서민경제연구소 대표</td>
+													<td>서경대학교 경제학과 졸업(부전공 법학)</td>
+													<td>현 (사)서민경제연구소 '정의와땀' 이사장<br/>(전) 전국축협 노조위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구갑</td>
+												<td class="alignC">8</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>위인규<br/>(魏仁揆)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/01/05<br/>(39세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학전문대학원 졸업</td>
+													<td>선문대학교 객원교수<br/>평화통일가정당 총재정책특보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>우원식<br/>(禹元植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/09/18<br/>(50세)</td>
+													<td>제17대 국회의원</td>
+													<td>연세대학교 토목공학과 졸업</td>
+													<td>현 국회서울균형모임대표<br/>현 제17대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>권영진<br/>(權泳臻)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/12/10<br/>(45세)</td>
+													<td>서울디지털대학교 행정학과 교수</td>
+													<td>고려대학교 대학원 졸업(정치학 박사)</td>
+													<td>전 서울특별시 정무부시장<br/>전 한나라당 미래연대 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>조현실<br/>(曺絃實)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1980/01/25<br/>(28세)</td>
+													<td>정당인</td>
+													<td>국민대학교 교육대학원 재학</td>
+													<td>(전) 국민대학교 총학생회장<br/>(현)민주노동당 88만원세대희망본부 노원본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구을</td>
+												<td class="alignC">6</td>
+														<td>국민실향안보당</td>
+													<td class=alignC>고진목<br/>(高辰睦)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/09/29<br/>(48세)</td>
+													<td>중계동 이동일학원 대표강사</td>
+													<td>한양대학교 산업대학원 기계공학과 졸업(공학석사)</td>
+													<td>민족사관고등학교 초대물리교사<br/>상계 뉴스터디학원 물리강사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>여석동<br/>(呂奭東)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1946/05/20<br/>(61세)</td>
+													<td>정당인</td>
+													<td>미기재</td>
+													<td>전 참가정실천운동본부노원구지부장<br/>현 세계평화 초종교 초국가 연합평화대사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구병</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김성환<br/>(金星煥)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/10/15<br/>(42세)</td>
+													<td>정당인</td>
+													<td>연세대학교 행정대학원 졸업</td>
+													<td>서울시의회 의원<br/>청와대 정책조정 비서관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구병</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>홍정욱<br/>(洪政旭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/03/14<br/>(38세)</td>
+													<td>기업인</td>
+													<td>스탠포드대학교 법과대학원 졸업</td>
+													<td>(주)헤럴드미디어 대표이사 회장<br/>(주)에이치엠엑스동아TV대표이사 회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구병</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>노회찬<br/>(魯會燦)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/08/31<br/>(51세)</td>
+													<td>정당인</td>
+													<td>고려대학교 정치외교학과 졸업</td>
+													<td>전 제17대 국회의원<br/>현 진보신당 상임공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">노원구병</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김인로<br/>(金仁路)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/06/24<br/>(37세)</td>
+													<td>기업인</td>
+													<td>선문대학교 신학과 졸업</td>
+													<td>전산개발자<br/>하이윌 대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>이미경<br/>(李美卿)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1950/09/20<br/>(57세)</td>
+													<td>국회의원</td>
+													<td>이화여자대학교 대학원 정치외교학과 졸업 (정치학 석사)</td>
+													<td>(현) 국회의원<br/>(현) 통합민주당 물가안정대책특위위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>안병용<br/>(安秉龍)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/02/25<br/>(50세)</td>
+													<td>정당인</td>
+													<td>건국대학교 법학과 졸업</td>
+													<td>(전)64회 FICC세계캠핑캐라바닝 조직위 사무총장<br/>(현)한나라당 부대변인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>조일호<br/>(曺一鎬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1941/11/15<br/>(66세)</td>
+													<td>신성산업사대표</td>
+													<td>미기재</td>
+													<td>(현) 국민대학교이사<br/>(전) 서울시의회의원윤리위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>강화연<br/>(姜和延)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1967/04/05<br/>(41세)</td>
+													<td>정당인</td>
+													<td>전남대학교 유아교육과 2년 제적</td>
+													<td>(전)한미 FTA 은평특위장<br/>(현)민주노동당 비대위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>강인섭<br/>(姜仁燮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1936/08/20<br/>(71세)</td>
+													<td>정당인</td>
+													<td>한국외국어대학교 불어과 졸업</td>
+													<td>전 청와대 정무수석<br/>제14대, 16대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>이상재<br/>(李相宰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/01/11<br/>(43세)</td>
+													<td>사회운동가</td>
+													<td>경성대학교 법학과 졸업</td>
+													<td>(현)평화통일가정당 은평갑 당협위원장<br/>(전)통일부 통일교육위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구갑</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>오순덕<br/>(吳順德)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1961/03/08<br/>(47세)</td>
+													<td>교수</td>
+													<td>고려대학교 일반대학원 가정학과 식품학전공 (박사과정 수료)</td>
+													<td>(현)서정대학 교수<br/>(현)한국조선왕조의궤음식문화연구소장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>송미화<br/>(宋美花)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1961/10/11<br/>(46세)</td>
+													<td>정당인</td>
+													<td>고려대학교 정책대학원 졸업(행정학석사)</td>
+													<td>(전)서울시의원<br/>제17대국회의원선거출마</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이재오<br/>(李在五)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1945/01/11<br/>(63세)</td>
+													<td>국회의원</td>
+													<td>고려대학교 교육대학원 졸업(교육학 석사)</td>
+													<td> (현) 제17대 국회의원<br/>(전) 한나라당 최고의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>정두형<br/>(鄭斗亨)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1940/10/09<br/>(67세)</td>
+													<td>이산 건축 설계 사무실 회장</td>
+													<td>고현초등학교 졸업</td>
+													<td>2006년 은평구청장 출마<br/>건축사 사무소 운영</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구을</td>
+												<td class="alignC">5</td>
+														<td>창조한국당</td>
+													<td class=alignC>문국현<br/>(文國現)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1949/01/12<br/>(59세)</td>
+													<td>정당인</td>
+													<td>서울대학교 대학원 경영학과 졸업 (경영학 석사)</td>
+													<td>창조한국당 대표<br/>유한킴벌리 대표이사 사장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">은평구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>엄윤형<br/>(嚴允炯)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/02/05<br/>(38세)</td>
+													<td>사회운동가</td>
+													<td>뉴욕 UTS 종교교육학 1년 9월 석사졸업</td>
+													<td>평화통일가정당 은평구(을) 당원협의회장(현)<br/>사)남북통일운동국민연합 중앙위원(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>우상호<br/>(禹相虎)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/12/12<br/>(45세)</td>
+													<td>국회의원</td>
+													<td>연세대학교 행정대학원 졸업(행정학 석사)</td>
+													<td>87년 연세대학교 총학생회장(전)<br/>통합민주당 대변인(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이성헌<br/>(李性憲)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/05/30<br/>(49세)</td>
+													<td>정당인</td>
+													<td>성균관대학교 신문방송학과 박사졸업(언론학 박사)</td>
+													<td>(전) 제16대 국회의원<br/>(전) 한나라당 박근혜 대표 비서실장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구갑</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>정현정<br/>(鄭鉉靜)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1977/04/20<br/>(30세)</td>
+													<td>정당인</td>
+													<td>연세대학교 문과대학 인문학부 졸업(사회학, 심리학 전공)</td>
+													<td>민주노동당 서대문구위원회위원장(전)<br/>서대문구 의정비 인상저지 주민공동 대책위 대표(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>노학우<br/>(盧學友)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1955/02/22<br/>(53세)</td>
+													<td>정당인</td>
+													<td>동아대학교 정치외교학과 졸업</td>
+													<td>대한민국 건국회 회장(전)<br/>남북통일청년단 단장(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김영호<br/>(金映豪)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/09/13<br/>(40세)</td>
+													<td>정당인</td>
+													<td>서강대학교 공공정책대학원 졸업(중국학 석사)</td>
+													<td>(전)민주당 서울시당 대변인<br/>(전)국민일보/스포츠투데이 기획조정실/기자</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>정두언<br/>(鄭斗彦)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/03/06<br/>(51세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 무역학과 졸업</td>
+													<td>서울특별시 정무부시장(전)<br/>이명박대통령후보 전략기획총괄팀장(전)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>이상훈<br/>(李尙勳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1972/02/18<br/>(36세)</td>
+													<td>정당인</td>
+													<td>연세대 전파공학과 졸업</td>
+													<td>(전)서대문 보육조례 개정운동본부 본부장<br/>(현)민주노동당 서울시당 부위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서대문구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>방승만<br/>(房昇晩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/12/11<br/>(41세)</td>
+													<td>사회운동가</td>
+													<td>경기대학교 무역학과 졸업</td>
+													<td>(현) 산수원 애국회 중앙본부 정책실장<br/>(현) 남북통일 국민연합 중앙위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>노웅래<br/>(盧雄來)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/08/03<br/>(50세)</td>
+													<td>대한민국 국회 국회의원</td>
+													<td>중앙대학교 철학과 졸업</td>
+													<td>(전)MBC 기자<br/>(전)열린우리당 원내대변인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>강승규<br/>(姜升圭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/09/20<br/>(44세)</td>
+													<td>정당인</td>
+													<td>서강대학교 영상대학원 광고홍보학 박사</td>
+													<td>(전)제17대 대통령직 인수위원회 부대변인<br/>(전)서울시 공보관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>윤성일<br/>(尹成一)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1975/11/09<br/>(32세)</td>
+													<td>정당인</td>
+													<td>연세대학교 경영학과 졸업</td>
+													<td>전) 마포학교급식조례제정 운동본부 공동대표<br/>현) 이랜드 비정규직 해결을 위한 지원대책위 집행위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>남기준<br/>(南基俊)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/09/01<br/>(43세)</td>
+													<td>사회운동가</td>
+													<td>미국 유티에스(UTS)대학원 석사</td>
+													<td>남북통일 국민연합 중앙위원(현)<br/>청년연합 서울시 정책 위원장(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>정청래<br/>(鄭淸來)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/04/18<br/>(42세)</td>
+													<td>국회의원</td>
+													<td>서강대학교 공공정책대학원 정치학석사</td>
+													<td>국회 문화관광위원회 간사(현)<br/>중국인민대학 초빙교수(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>강용석<br/>(康容碩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/12/03<br/>(38세)</td>
+													<td>변호사</td>
+													<td>Harvard Law School 법학석사</td>
+													<td>(전)이명박 대통령 후보 중앙선대위 법률지원팀장<br/>(전)한나라당 마포을 당원협의회 운영위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구을</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>서준영<br/>(徐駿榮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/08/24<br/>(47세)</td>
+													<td>정당인</td>
+													<td>국민대학교 정치대학원 재학</td>
+													<td>전 박근혜 경선후보 기획실장<br/>현 친박연대 수석 부대변인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구을</td>
+												<td class="alignC">7</td>
+														<td>진보신당</td>
+													<td class=alignC>정경섭<br/>(丁景燮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/02/27<br/>(37세)</td>
+													<td>정당인</td>
+													<td>서울예술대학 사진과 졸업</td>
+													<td><현> 민중의 집(준) 공동대표<br/><현> 웹저널 '레디앙' 칼럼니스트</td>
+												<tr>
+											<tr>
+												<td class="firstTd">마포구을</td>
+												<td class="alignC">8</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김연정<br/>(金姸廷)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1979/07/27<br/>(28세)</td>
+													<td>사회운동가</td>
+													<td>인천대학교 생활자원관리학과 졸업</td>
+													<td>(현) W-CARP 서울시 여성회장<br/>(현) 평화통일가정당 마포구 (을) 당협위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>이제학<br/>(李濟學)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/12/06<br/>(44세)</td>
+													<td>(주)카르마웍스 경영기획이사</td>
+													<td>연세대학교 행정대학원 졸업(행정학 석사)</td>
+													<td>경기문화재단 기획조정실장<br/>정동영 대선후보 공보특보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>원희룡<br/>(元喜龍)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/02/14<br/>(44세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 법학과 졸업</td>
+													<td>검사<br/>변호사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구갑</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>강삼재<br/>(姜三載)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/07/01<br/>(55세)</td>
+													<td>정당인</td>
+													<td>경희대학교 신문방송학과 졸업</td>
+													<td>12~16대 국회의원<br/>자유선진당 최고위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>왕성태<br/>(王成泰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/10/15<br/>(40세)</td>
+													<td>사회운동가</td>
+													<td>광주대학교 관광통역학과 졸업</td>
+													<td>세계 평화 대사<br/>평화통일연합 나고야 고문</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김낙순<br/>(金洛淳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/08/24<br/>(50세)</td>
+													<td>국회의원</td>
+													<td>고려대학교 정책대학원 졸업</td>
+													<td>제17대 국회의원<br/>국회 입법정책연구회 회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김용태<br/>(金容兌)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/03/26<br/>(40세)</td>
+													<td>정치인</td>
+													<td>서울대학교 정치학과 졸업</td>
+													<td>중앙일보 기획위원<br/>대통령직 인수위 전문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">양천구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>최정<br/>(崔政)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/11/19<br/>(45세)</td>
+													<td>정당인</td>
+													<td>뉴욕 UTS 대학원 MDV 4년 재학</td>
+													<td>IIPC한국평화대사<br/>남북통일국민연합 양천구 상임고문</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>신기남<br/>(辛基南)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/10/16<br/>(55세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 법과대학 졸업</td>
+													<td>인권변호사<br/>국회정보위원회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>구상찬<br/>(具相燦)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/07/07<br/>(50세)</td>
+													<td>정당인</td>
+													<td>동국대학교 대학원 졸업</td>
+													<td>한나라당 박근혜대표 공보특보<br/>이명박 대통령 특사(중국)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구갑</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>백철<br/>(白喆)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/08/02<br/>(51세)</td>
+													<td>정당인</td>
+													<td>경희대학교 법학과 졸업</td>
+													<td>자유선진당 이회창총재 정책특보<br/>(전)자유민주연합강서구갑지구당위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>최동석<br/>(崔東錫)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1974/06/26<br/>(33세)</td>
+													<td>정당인</td>
+													<td>고려대학교 법학과 졸업</td>
+													<td>고려대학교 법과대학 학생회장<br/>민주노동당 중앙위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>박종춘<br/>(朴鍾春)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/07/25<br/>(39세)</td>
+													<td>사회사업가</td>
+													<td>경희대학교 NGO대학원 졸업(시민사회학 석사)</td>
+													<td>사단법인 세계평화청년연합 사무총장<br/>민주평통 자문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>노현송<br/>(盧顯松)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/01/28<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>한국외국어대학교 대학원 박사과정 졸업(언어학 박사)</td>
+													<td>고려대학교 교수<br/>민선 제2대 강서구청장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김성태<br/>(金聖泰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/05/23<br/>(49세)</td>
+													<td>사회복지사</td>
+													<td>한양대학교 행정대학원 졸업(행정학 석사)</td>
+													<td>제17대 이명박대통령 인수위원회 상임자문위원<br/>전국소년소녀가장돕기중앙회 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>김백중<br/>(金白中)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1974/08/15<br/>(33세)</td>
+													<td>정당인</td>
+													<td>중국연변대학교 한어과 수료</td>
+													<td>(전)박근혜경선캠프 조직총괄 특보<br/>(현)자유선진당 이회창총재 정책특보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>신규대<br/>(申奎大)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/04/06<br/>(48세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학과 졸업</td>
+													<td>(현)남북통일운동 국민연합 강서구 상임고문<br/>(현)평화통일가정당강서구을당원협의회 회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강서구을</td>
+												<td class="alignC">7</td>
+														<td>무소속</td>
+													<td class=alignC>김성호<br/>(金成鎬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/03/03<br/>(46세)</td>
+													<td>정치인</td>
+													<td>서울대학교 정치학과 졸업</td>
+													<td>제16대 국회의원(새천년민주당)<br/>한겨레신문 정치부 기자</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>이인영<br/>(李仁榮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/06/28<br/>(43세)</td>
+													<td>국회의원</td>
+													<td>고려대학교 언론대학원 정보통신학과 석사과정 수료</td>
+													<td>고려대학교 총학생회장<br/>제17대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이범래<br/>(李泛來)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/01/26<br/>(49세)</td>
+													<td>변호사</td>
+													<td>경희대학교 경영대학원 세무관리학과(석사) 졸업</td>
+													<td>한나라당 서울시당 구로갑 당협위원장<br/>법무법인 중앙 대표변호사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>유영철<br/>(柳永喆)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1951/02/27<br/>(57세)</td>
+													<td>공인회계사</td>
+													<td>한양대학교 대학원 경영학과 석사과정 졸업</td>
+													<td>(현)공인회계사회 윤리조사심의위원장<br/>(전)한나라당 제17대대통령경선 박근혜후보 대책위원회 구로본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>나인환<br/>(羅仁煥)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/07/12<br/>(55세)</td>
+													<td>정당인</td>
+													<td>호원대학교 관광통역학과 졸업</td>
+													<td>국제 승공연합 중앙연수원 강사<br/>남북통일운동국민연합 구로구 상임고문</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>박영선<br/>(朴映宣)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1960/01/22<br/>(48세)</td>
+													<td>제17대 국회의원</td>
+													<td>서강대학교 언론대학원(석사) 졸업</td>
+													<td>제17대 국회의원(재정경제위원회 위원)<br/>MBC경제부장(앵커)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>고경화<br/>(高京華)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1962/07/18<br/>(45세)</td>
+													<td>한나라당 제17대 국회의원(현)</td>
+													<td>이화여자대학교 대학원 박사과정 수료(사회복지학)</td>
+													<td>한나라당 제6정책조정위원회 위원장<br/>제17대대통령선거 중앙선대위일류국가비전위원회 보건복지위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>한형교<br/>(韓亨敎)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1961/11/21<br/>(46세)</td>
+													<td>한일지도(주) 대표이사</td>
+													<td>중앙대학교 대학원 행정학과 박사과정수료</td>
+													<td>서울 구로 상공회의소 부회장<br/>한국방송통신대학교 서울 총동문회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>유선희<br/>(柳仙姬)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1966/10/12<br/>(41세)</td>
+													<td>정당인</td>
+													<td>서울대학교 역사교육학과 3년 제적</td>
+													<td>민주노동당 최고위원<br/>구로청년회 회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>조평열<br/>(曺平烈)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1947/07/17<br/>(60세)</td>
+													<td>국가발전국민연대 공동대표</td>
+													<td>동국대학교 대학원 졸업(법학박사)</td>
+													<td>연세대학교 법무대학원 강사<br/>광운대학교 법대 겸임교수역임</td>
+												<tr>
+											<tr>
+												<td class="firstTd">구로구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>정호윤<br/>(鄭琥潤)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1973/08/23<br/>(34세)</td>
+													<td>정당인, 영등산업(주) 부대표</td>
+													<td>홍익대학교 상경대학 상경학부 금융보험학과 졸업</td>
+													<td>세계일보 조사위원<br/>평화통일가정당 재정경제위원회 부위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>이목희<br/>(李穆熙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/09/10<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 무역학과 졸업</td>
+													<td>17대 국회의원<br/>대통합민주신당 쇄신위원회 위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>안형환<br/>(安亨奐)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/06/07<br/>(44세)</td>
+													<td>정당인</td>
+													<td>하버드대학교 공공행정대학원 졸업(석사)</td>
+													<td>KBS 보도본부 외교안보데스크<br/>하버드 케네디스쿨 연구원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>장영호<br/>(張永浩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1950/01/19<br/>(58세)</td>
+													<td>정당인</td>
+													<td>미기재</td>
+													<td>(전)서울특별시의회 의원<br/>한국청소년동아리서울연맹 총재</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>최석희<br/>(崔碩熙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/03/25<br/>(43세)</td>
+													<td>정당인</td>
+													<td>서울시립대학교 화학공학과 3년 제적</td>
+													<td>민주노동당 금천구위원회 위원장<br/>민주노동당 88만원세대 희망본부 공동본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">6</td>
+														<td>기독당</td>
+													<td class=alignC>김당수<br/>(金唐守)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/12/24<br/>(51세)</td>
+													<td>목사</td>
+													<td>국제신학대학원대학교 사회복지학과 재학중</td>
+													<td>새정치국민회의 중앙당 교통관광특위 부위원장<br/>이한동 대통령후보 정무특보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">금천구</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>유준수<br/>(柳俊守)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/05/13<br/>(36세)</td>
+													<td>정당인</td>
+													<td>선문대학교졸업(해외선교학 전공)</td>
+													<td>참가정실천운동본부 금천구회장<br/>평화대사협의회 금천구 고문</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김영주<br/>(金榮珠)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1955/07/27<br/>(52세)</td>
+													<td>국회의원</td>
+													<td>서강대학교 경제대학원 졸업(경제학석사)</td>
+													<td>제17대 국회의원<br/>(현)통합민주당 수석부총장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>전여옥<br/>(田麗玉)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1959/04/19<br/>(48세)</td>
+													<td>국회의원</td>
+													<td>서강대학교 공공정책대학원 졸업(정치학석사)</td>
+													<td>제17대 국회의원<br/>(전)한나라당 최고위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>이정미<br/>(李貞味)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1966/02/07<br/>(42세)</td>
+													<td>정당인</td>
+													<td>한국외국어대학교 신문방송학과 2년 중퇴</td>
+													<td>민주노동당 대변인<br/>북녘어린이영양빵공장 운영이사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>한경남<br/>(韓慶南)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1946/11/29<br/>(61세)</td>
+													<td>사회운동가</td>
+													<td>고려대학교 정치외교학과 졸업</td>
+													<td>국민희망운동 상임의장<br/>민청련 의장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김문식<br/>(金文植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/10/26<br/>(43세)</td>
+													<td>정당인</td>
+													<td>건국대학교 일반대학원 졸업(문학석사)</td>
+													<td>(현)영등포고등학교 총동문회 부회장<br/>(현)피스컵국제축구대회 조직위원회 영등포구 홍보위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>이경숙<br/>(李景淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1953/08/15<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>이화여자대학교 신문방송학과 졸업</td>
+													<td>한국여성단체연합 상임대표<br/>열린우리당 공동의장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>권영세<br/>(權寧世)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/02/24<br/>(49세)</td>
+													<td>국회의원</td>
+													<td>하버드대학교 케네디스쿨 졸업(행정학석사)</td>
+													<td>(전)한나라당 최고위원<br/>(현)한나라당 나눔봉사위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">영등포구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김용승<br/>(金容勝)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/09/06<br/>(41세)</td>
+													<td>정당인</td>
+													<td>건국대학교 일반대학원 졸업(정치학석사)</td>
+													<td>평화통일가정당 정책위 사무국장<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>전병헌<br/>(田炳憲)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/03/17<br/>(50세)</td>
+													<td>국회의원</td>
+													<td>고려대 정책대학원 졸업(경제학석사)</td>
+													<td>제17대 국회의원<br/>전)청와대국정상황실장(국민의 정부)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>권기균<br/>(權奇鈞)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/02/22<br/>(51세)</td>
+													<td>정당인</td>
+													<td>한양대학교대학원 금속공학과 졸업(공학박사)</td>
+													<td>전)이명박대통령후보선대위 부대변인<br/>전)대통령직 인수위원회 담당관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구갑</td>
+												<td class="alignC">6</td>
+														<td>친박연대</td>
+													<td class=alignC>손상윤<br/>(孫相允)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/12/25<br/>(42세)</td>
+													<td>정당인</td>
+													<td>숭실대학교 정보과학대학원 졸업(석사)</td>
+													<td>전)부천대학 겸임교수<br/>전)(주)뉴스타운인터넷신문대표이사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구갑</td>
+												<td class="alignC">7</td>
+														<td>진보신당</td>
+													<td class=alignC>김학규<br/>(金學奎)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/10/03<br/>(41세)</td>
+													<td>정당인</td>
+													<td>서울대학교 국사학과 졸업</td>
+													<td>전)민주열사박종철기념사업회 사무국장<br/>현)학교급식조례제정동작연대 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구갑</td>
+												<td class="alignC">8</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>배명선<br/>(裵明善)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/02/15<br/>(45세)</td>
+													<td>정당인</td>
+													<td>서울디지털대학교 일어학과 3년 재학</td>
+													<td>현)민주평화통일 자문위원<br/>전)세계평화통일가정연합 동작구 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>정동영<br/>(鄭東泳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/06/17<br/>(54세)</td>
+													<td>정당인</td>
+													<td>서울대학교 국사학과 4년졸업</td>
+													<td>제31대 통일부 장관<br/>제17대 대통합민주신당 대통령 후보자</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>정몽준<br/>(鄭夢準)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1951/10/17<br/>(56세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 경제학과 졸업</td>
+													<td>(현) 대한축구협회 회장<br/>(현) 아산사회복지재단 이사장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김지희<br/>(金芝希)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1967/01/27<br/>(41세)</td>
+													<td>민주노총 임원</td>
+													<td>고려대학교 사범대학 역사교육학과 졸업</td>
+													<td>2006 민주노총4기 부위원장<br/>2007 전국여성연대공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">6</td>
+														<td>기독당</td>
+													<td class=alignC>나용집<br/>(羅庸集)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1943/04/14<br/>(64세)</td>
+													<td>한국사회복지협회 대표회장</td>
+													<td>한국외국어대학교 경영대학원졸업 국제경영학석사</td>
+													<td>전)서울수도공고,안양공고,신성중고교사(15년)<br/>현)한국창조성개발본부 지부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">7</td>
+														<td>진보신당</td>
+													<td class=alignC>김종철<br/>(金鍾哲)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/10/15<br/>(37세)</td>
+													<td>정당인</td>
+													<td>서울대학교 경제학과 졸업</td>
+													<td>2006년 서울시장 후보<br/>전)서울시 학교급식조례제정운동본부 집행위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">8</td>
+														<td>통일당</td>
+													<td class=alignC>정연중<br/>(鄭然中)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1943/09/20<br/>(64세)</td>
+													<td>대진대학교 부교수</td>
+													<td>한양대학교 대학원 졸업(경제학박사)</td>
+													<td>대진대학교 디지털경제학과 부교수 재직중<br/>제17대 대통령 예비후보자</td>
+												<tr>
+											<tr>
+												<td class="firstTd">동작구을</td>
+												<td class="alignC">9</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>옥윤호<br/>(玉允豪)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/11/07<br/>(38세)</td>
+													<td>사회운동가</td>
+													<td>선문대학교 신학전문대학원 졸업(해외선교학과 석사)</td>
+													<td>월드카프 서울시 부회장<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>유기홍<br/>(柳基洪)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/06/11<br/>(49세)</td>
+													<td>국회의원</td>
+													<td>서울대학교 사학과졸업</td>
+													<td>제17대 국회의원<br/>제17대 국회의원 교육위원회 간사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김성식<br/>(金成植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/12/16<br/>(49세)</td>
+													<td>정당인</td>
+													<td>서울대학교 경제학과 졸업</td>
+													<td>경기도정무부지사<br/>한나라당 제2 정책조정위원장(경제,예산)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>박명희<br/>(朴明熙)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1973/04/25<br/>(34세)</td>
+													<td>정당인</td>
+													<td>인헌고등학교졸업</td>
+													<td>119민생희망본부 공동본부장(현)<br/>등록금상한제 입법촉구 범국민운동본부 공동본부장(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">5</td>
+														<td>창조한국당</td>
+													<td class=alignC>성정훈<br/>(成政勳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1977/04/26<br/>(30세)</td>
+													<td>소설가</td>
+													<td>미기재</td>
+													<td>(전)육군 검찰서기<br/>소설 마도황제(2006/전5권/랜덤하우스 북박스) 출간</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>김 웅<br/>(金 雄)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/03/22<br/>(39세)</td>
+													<td>정당인</td>
+													<td>서울대 대학원 정치학과 수료 (석사과정)</td>
+													<td>학교급식조례 관악운동본부장<br/>신용카드수수료 인하 관악운동본부장(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>송혜건<br/>(宋惠虔)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1967/06/17<br/>(40세)</td>
+													<td>정당인</td>
+													<td>단국대학교 화학공학과 졸업</td>
+													<td>(사)세계평화여성연합 통일분과 공동위원장<br/>6.15 공동 선언 실천 위원회 여성분과 위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김희철<br/>(金熙喆)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1947/12/15<br/>(60세)</td>
+													<td>건국대학교 행정대학원 초빙교수</td>
+													<td>건국대학교 행정대학원졸업(행정학 박사)</td>
+													<td>민선 2,3기 구청장<br/>건국대학교 행정대학원 초빙교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김철수<br/>(金喆洙)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1944/03/23<br/>(64세)</td>
+													<td>양지종합병원 원장</td>
+													<td>고려대학교 의과대학원 졸업(박사과정)</td>
+													<td>한나라당재정위원장<br/>대한병원협회회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>엄윤섭<br/>(嚴允燮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1967/03/26<br/>(41세)</td>
+													<td>정당인</td>
+													<td>서울대대학원 기계항공공학부 박사과정수료</td>
+													<td>119민생희망본부 공동본부장(현)<br/>등록금상한제 입법촉구 범국민운동본부 공동본부장(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>신장식<br/>(申莊植)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1971/05/25<br/>(36세)</td>
+													<td>정당인</td>
+													<td>서울대 대학원 정치학과 수료 (석사과정)</td>
+													<td>진보신당 대변인(현)<br/>신용카드수수료 인하 범국민운동본부 집행위원장(현)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>오영재<br/>(吳泳才)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/02/11<br/>(42세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학전문대학원 졸업(해외선교학과 석사)</td>
+													<td>신림가정연합 교회장<br/>시민운동가</td>
+												<tr>
+											<tr>
+												<td class="firstTd">관악구을</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>임충섭<br/>(林忠燮)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/09/03<br/>(37세)</td>
+													<td>개인사업</td>
+													<td>경희대학교 문리과대학 생물학과 4년 중퇴</td>
+													<td>구)열린우리당 사수파 당원<br/>현) 열린우리당 (가칭)창당준비위원회 발기인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>박찬선<br/>(朴燦善)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1952/09/25<br/>(55세)</td>
+													<td>정당인</td>
+													<td>전남대학교 농업경제학과 졸업(농학사)</td>
+													<td>전 제3대, 4대 서초구의원<br/>전 한국지방자치신문 발행인</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이혜훈<br/>(李惠薰)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1964/06/15<br/>(43세)</td>
+													<td>국회의원</td>
+													<td>미국 UCLA대학교 경제학박사</td>
+													<td>전 박근혜 대변인<br/>전 한나라당 원내부대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구갑</td>
+												<td class="alignC">6</td>
+														<td>국민실향안보당</td>
+													<td class=alignC>양한별<br/>(梁한별)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1956/07/20<br/>(51세)</td>
+													<td>강원산삼대표</td>
+													<td>한국방송통신대학교 법학과 2학년 재학중</td>
+													<td>국가유공자 보훈처7급<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>조병석<br/>(趙炳錫)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/04/20<br/>(39세)</td>
+													<td>정당인</td>
+													<td>미국 뉴욕 통일신학대학원 졸업(종교교육 석사)</td>
+													<td>평화통일가정당 중앙위원<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김윤<br/>(金潤)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/10/03<br/>(44세)</td>
+													<td>(사)한국경제세계화포럼 대표</td>
+													<td>서울대학교 서양사학과 졸업(문학사)</td>
+													<td>(전)대우자동차 세계경영팀장<br/>(전)시민방송 경영관리본부장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>고승덕<br/>(高承德)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1957/11/12<br/>(50세)</td>
+													<td>변호사</td>
+													<td>서울대학교 법과대학 법학과 졸업(법학사)</td>
+													<td>변호사<br/>이화여자대학교 겸임교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>박천숙<br/>(朴千淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1972/08/10<br/>(35세)</td>
+													<td>한국소비자원 직원</td>
+													<td>한국해양대학교 해사법학과 졸업(법학사)</td>
+													<td>2006년 지방선거 서초구의회 민주노동당 비례후보 출마<br/>전국공공연구노동조합 한국소비자원비정규직 직할분회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>성순욱<br/>(成順旭)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1971/03/05<br/>(37세)</td>
+													<td>정당인</td>
+													<td>상명여자대학교 조형예술학부 졸업(미술학사)</td>
+													<td>현 UN NGO 제1영역 자문기관 (사)세계평화여성연합 청소년분과 위원<br/>-</td>
+												<tr>
+											<tr>
+												<td class="firstTd">서초구을</td>
+												<td class="alignC">7</td>
+														<td>무소속</td>
+													<td class=alignC>조남호<br/>(趙南浩)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1938/03/24<br/>(70세)</td>
+													<td>가톨릭대학교 사회복지대학원 강사</td>
+													<td>고려대학교 법과대학 법학과 졸업(법학사)</td>
+													<td>(전)1대,2대,3대 민선 서초구청장<br/>(전)제17대 대통령직인수위원회 법무행정분과위 자문위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김성욱<br/>(金城旭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/06/30<br/>(47세)</td>
+													<td>정당인</td>
+													<td>뉴욕대학교 국제경영학과 졸업</td>
+													<td>제23대 뉴욕한인회 이사<br/>강남구 자원봉사센터 홍보위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이종구<br/>(李鍾九)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1950/09/22<br/>(57세)</td>
+													<td>국회의원</td>
+													<td>미국노스웨스턴대학교 Kellogg School 경영대학원 졸업</td>
+													<td>제17대 국회의원<br/>한나라당 사무부총장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>엄원태<br/>(嚴元泰)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1968/01/16<br/>(40세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학과 졸업</td>
+													<td>(현)Peace Cup 강남구 홍보위원<br/>(현)평화통일가정당 교육청년위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">7</td>
+														<td>무소속</td>
+													<td class=alignC>권헌성<br/>(權憲成)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/08/29<br/>(49세)</td>
+													<td>(재) 국제평화전략연구원 이사장</td>
+													<td>미 프린스턴 대학교 정치학과 졸업</td>
+													<td>13대 국회의원<br/>IPU 총회 한국대표 (4회 역임)</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">8</td>
+														<td>무소속</td>
+													<td class=alignC>김원종<br/>(金垣鍾)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1981/09/25<br/>(26세)</td>
+													<td>힙합가수</td>
+													<td>미기재</td>
+													<td>전)인세인 디지 1집 활동<br/>전)영국계 컨설팅 회사 과장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">9</td>
+														<td>무소속</td>
+													<td class=alignC>박부서<br/>(朴富緖)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1937/10/07<br/>(70세)</td>
+													<td>인권운동가</td>
+													<td>미기재</td>
+													<td>국가대명 전사협의회 회장<br/>육군소령예편</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구갑</td>
+												<td class="alignC">10</td>
+														<td>무소속</td>
+													<td class=alignC>서상목<br/>(徐相穆)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1947/07/11<br/>(60세)</td>
+													<td>사단법인 21세기교육문화포럼 이사장</td>
+													<td>미국 스탠퍼드대학교 경제학박사(Ph.D)</td>
+													<td>한나라당 3선(13,14,15대) 국회의원<br/>보건복지부 장관</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>최영록<br/>(崔永祿)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1965/09/12<br/>(42세)</td>
+													<td>회사대표</td>
+													<td>경북대학교 법과대학 졸업</td>
+													<td>(현)사랑나눔 이사<br/>(현)최영록로얄학습클리닉대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>공성진<br/>(孔星鎭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1953/04/20<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>미국 클레어몬트 대학원 졸업(정치학 박사)</td>
+													<td>한나라당 서울시당 위원장<br/>한양대 행정대학원 교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>신대철<br/>(申大澈)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1943/04/01<br/>(65세)</td>
+													<td>(주) 윈윈마케팅 대표이사 / 사장</td>
+													<td>서울대학교 물리학과 졸업</td>
+													<td>(전) 코카콜라 아시아 영업대표<br/>(현) 자유선진당 총재 경제특보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김재연<br/>(金在姸)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1980/10/30<br/>(27세)</td>
+													<td>정당인</td>
+													<td>한국외국어대학교 러시아어과 졸업</td>
+													<td>민주노동당 부대변인<br/>한국외국어대학교 총학생회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>신언직<br/>(申彦直)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1964/02/20<br/>(44세)</td>
+													<td>진보신당 강남 당원협의회 의장</td>
+													<td>경희대학교 3년 중퇴</td>
+													<td>단병호 국회의원 보좌관<br/>심상정 국회의원 대선경선 후보 특보단장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강남구을</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김미화<br/>(金美化)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1954/02/05<br/>(54세)</td>
+													<td>정당인</td>
+													<td>선문대학교 사회복지대학원 가족치료학과 졸업(석사)</td>
+													<td>평화통일가정당 중앙당 여성국장<br/>가정평화봉사센타 원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>정직<br/>(鄭直)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1962/04/13<br/>(45세)</td>
+													<td>정당인</td>
+													<td>중앙대학교 사회과학대학 무역학과 졸업 </td>
+													<td>(전) (주)네오플렉스 대표이사<br/>(현)하나보성정보 대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>박영아<br/>(朴英娥)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1960/06/18<br/>(47세)</td>
+													<td>대학교수</td>
+													<td>미국 펜실베니아대 대학원 물리학과 졸업 (4년과정, 이학박사)</td>
+													<td>(현)명지대학교 물리학과 교수<br/>(현)한국물리학회 부회장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구갑</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>김원근<br/>(金源根)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1958/01/27<br/>(50세)</td>
+													<td>정당인</td>
+													<td>미국 뉴욕 통일신학대학원 졸업 (종교교육학석사, 2년)</td>
+													<td>(전)미국성직자연합회 남부지역 공동의장<br/>(현)평화통일가정당 중앙위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>장복심<br/>(張福心)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1946/06/16<br/>(61세)</td>
+													<td>17대 국회의원</td>
+													<td>강원대학교 약학대학원 졸업(약학박사)</td>
+													<td>17대 국회의원<br/>(현)국회의원연구단체 복지사회포럼 대표의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>유일호<br/>(柳一鎬)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1955/03/30<br/>(53세)</td>
+													<td>교수</td>
+													<td>미국 펜실베니아대 대학원 졸업 (경제학과, 박사, 5년)</td>
+													<td>(전)한국조세연구원장<br/>한국개발연구원 국제정책대학원 교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>이재혁<br/>(李在爀)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1970/08/30<br/>(37세)</td>
+													<td>정당인</td>
+													<td>미국 통일신학대학원 졸업 (신학과정-신학석사, 2년4월)</td>
+													<td>(전)세계평화통일가정연합 지부장<br/>(현)평화통일가정당 송파을 후보</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>김성순<br/>(金聖順)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1940/09/28<br/>(67세)</td>
+													<td>정당인</td>
+													<td>한양대학교 대학원 행정학과 졸업 (행정학 박사)</td>
+													<td>송파구청장(관선 초대·4대,민선 초대·2대)<br/>제16대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>이계경<br/>(李啓卿)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1950/12/21<br/>(57세)</td>
+													<td>국회의원</td>
+													<td>이화여자대학교 대학원 사회사업학과 졸업 (문학석사)</td>
+													<td>(전)여성신문사 사장<br/>17대 대선 한나라당 선대위 여성청소년 위원장 </td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>이재권<br/>(李載權)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/01/25<br/>(54세)</td>
+													<td>고려고속관광(주) 대표</td>
+													<td>덕산고등학교 졸업</td>
+													<td>(전)덕산고등학교 총동문회장<br/>(현)고려고속관광(주) 대표이사</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>김현종<br/>(金鉉鍾)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/07/07<br/>(44세)</td>
+													<td>정당인</td>
+													<td>고려대학교 3학년 제적</td>
+													<td>민주노동당 송파지역위원장<br/></td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">5</td>
+														<td>창조한국당</td>
+													<td class=alignC>안명순<br/>(安明淳)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/12/05<br/>(44세)</td>
+													<td>기업인</td>
+													<td>한국방송통신대학교 대학원 경영학과 석사학위과정(5학기) 재학중</td>
+													<td>(현)창조한국당 송파구 지역위원회 위원장<br/>(현)창조한국당 중소기업발전위원회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">송파구병</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>성환부<br/>(成煥富)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1966/10/01<br/>(41세)</td>
+													<td>정당인</td>
+													<td>미국 뉴욕통일신학대학원 졸업 (종교교육학 석사, 2년 9월)</td>
+													<td>(현)피스컵조직위원회 송파구 홍보위원회 위원장 <br/>(현)평화통일가정당 당원협의회 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구갑</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>송기정<br/>(宋起政)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1963/06/24<br/>(44세)</td>
+													<td>정당인</td>
+													<td>연세대학교 경영학과 4학년 휴학중</td>
+													<td>(전)청와대 기획조정 행정관<br/>(전)17대 대선 대통합민주신당 강동구갑 공동선대위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구갑</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>김충환<br/>(金忠環)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1954/03/09<br/>(54세)</td>
+													<td>국회의원</td>
+													<td>서울시립대학교 대학원(행정학 박사)</td>
+													<td>강동구청장 3선<br/>제17대 국회의원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구갑</td>
+												<td class="alignC">3</td>
+														<td>자유선진당</td>
+													<td class=alignC>박용규<br/>(朴容圭)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/09/10<br/>(47세)</td>
+													<td>국토지적원(주) 대표이사</td>
+													<td>경기대학교 정치전문대학원 정치법학과 석사과정 재학중</td>
+													<td>현)통일부 통일교육위원<br/>현)경기대학교 정치전문대학원 국가지도자과정 주임교수</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구갑</td>
+												<td class="alignC">6</td>
+														<td>진보신당</td>
+													<td class=alignC>박치웅<br/>(朴稚雄)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1959/02/24<br/>(49세)</td>
+													<td>정당인</td>
+													<td>건국대학교 행정대학원 졸업(정치학 석사)</td>
+													<td>현)강동구보육조례개정운동본부 상임대표<br/>현)진보신당 서울시당 공동대표</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구갑</td>
+												<td class="alignC">7</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>신인선<br/>(申仁先)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1969/01/20<br/>(39세)</td>
+													<td>정당인</td>
+													<td>선문대학교 신학전문대학원 수료(석사과정)</td>
+													<td>현)피스컵코리아 준비위원장<br/>현)세계일보 조사위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구을</td>
+												<td class="alignC">1</td>
+														<td>통합민주당</td>
+													<td class=alignC>심재권<br/>(沈載權)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1946/08/15<br/>(61세)</td>
+													<td>정당인</td>
+													<td>호주 모나쉬대학교 국제정치학 박사(Ph.D)</td>
+													<td>제16대 국회의원<br/>통합민주당 서울시당 위원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구을</td>
+												<td class="alignC">2</td>
+														<td>한나라당</td>
+													<td class=alignC>윤석용<br/>(尹碩鎔)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1951/11/16<br/>(56세)</td>
+													<td>정당인</td>
+													<td>중앙대학교 사회개발대학원 졸업(행정학 석사)</td>
+													<td>(전)한나라당 강동구을 당협위원장<br/>(현)천호한의원 원장</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구을</td>
+												<td class="alignC">4</td>
+														<td>민주노동당</td>
+													<td class=alignC>최형숙<br/>(崔炯淑)</td>
+													<td class=alignC>여</td>
+													<td class=alignC>1967/08/25<br/>(40세)</td>
+													<td>정당인</td>
+													<td>한양여자전문대학(현 한양여자대학) 의상과 졸업</td>
+													<td>현)강동보육조례운동본부 대표<br/>민주노동당 중앙위원</td>
+												<tr>
+											<tr>
+												<td class="firstTd">강동구을</td>
+												<td class="alignC">6</td>
+														<td>평화통일가정당</td>
+													<td class=alignC>최광길<br/>(崔光吉)</td>
+													<td class=alignC>남</td>
+													<td class=alignC>1960/07/13<br/>(47세)</td>
+													<td>정당인</td>
+													<td>서울디지털대학교 상담심리학부 1년 재학</td>
+													<td>현)평화통일가정당 강동을 당협위원장<br/>피스컵조직위원회 홍보위원</td>
+												<tr>
+											</tbody>
+							</table>
+						</div>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+
+
+        <div id="footer">
+            
+            <div class="footmu">
+                <ul>
+                    <li><a href="/main/help/helpMenu.xhtml?selectedName=privacypolicy">개인정보 처리방침</a></li>
+                    <li><a href="/main/help/helpMenu.xhtml?selectedName=copyrightpolicy">저작권 정책</a></li>
+                    <li><a href="/main/help/helpMenu.xhtml?selectedName=app">선거정보앱 안내</a></li>
+                    <li><a href="/main/help/helpMenu.xhtml?selectedName=faq">FAQ</a></li>
+                </ul>
+                <div class="footsite">
+                	<select id="sitelink" name="sitelink" title="관련사이트 선택 이동">
+                    	<option value="">관련사이트</option>
+                    	<option value="http://www.nec.go.kr">중앙선거관리위원회홈페이지</option>
+                    	<option value="http://ok.nec.go.kr">재외선거홈페이지</option>
+                    	<option value="http://party.nec.go.kr">정책ㆍ공약알리미</option>
+                    	<option value="http://ova.nec.go.kr">재외선거 인터넷 신고ㆍ신청</option>
+                    </select>
+                    <input id="moveToSite" class="input_go" type="image" src="/common/images/common/btn_go.gif" title="관련사이트 이동(새창열림)" alt="관련사이트 이동" />
+                </div>
+            </div>
+            
+            
+            
+			<div class="copyright">
+                <p class="footlogo">
+                	<span>중앙선거관리위원회</span>
+                </p>	
+                <p class="address">
+                    [13809] 경기도 과천시 홍촌말로 44 중앙선거관리위원회 
+                    <br />
+                    Copyright(c) National Election Commission. All Rights Reserved.
+                </p>
+                <p class="callcenter">
+                    <span>선거법안내 선거법의신고 선거콜센터 1390</span>
+                </p>
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript">
+        	//<[CDATA[
+        	$(function(){
+		    	
+		    	$( '#moveToSite' ).click( function(){
+		    		if ( $( '#sitelink' ).val() != '' ) {
+		    			window.open( $( '#sitelink' ).val(), '_blank');
+		    		}
+		    	});
+        	});
+        	//]]>
+    	</script></div>
+</div>
+</body>
+</html>
+
