@@ -9,5 +9,6 @@
 <pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
 <path>C:\Python27\Lib</path>
 <path>C:\Python27\Lib\site-packages</path>
+<path>C:\Anaconda\Lib\site-packages</path>
 </pydev_pathproperty>
 </pydev_project>

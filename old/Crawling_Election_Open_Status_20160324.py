@@ -6,7 +6,6 @@ Created on 2016. 3. 24.
 '''
 
 from bs4 import BeautifulSoup
-import urllib
 import csv
 from datetime import datetime, timedelta
 

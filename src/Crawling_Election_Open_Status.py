@@ -1,8 +1,9 @@
 #-*- coding:utf-8 -*-
 '''
 Created on 2016. 3. 24.
-
 @author: SangShik
+
+19대 국회의원선거 기본데이터 가져오기
 '''
 
 from bs4 import BeautifulSoup
